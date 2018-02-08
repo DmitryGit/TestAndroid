@@ -1,89 +1,89 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
-INJECTED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
-INJECTED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
-INJECTED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
-MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\f1f47096e3343b7fbe85ed5e59e2f727\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\45e7f86d0f02c331b43e0ab4ef6c6c9c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\81303369bf1d655357e7ea6dfc5fb890\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\457869534289304c93d1dcef17b61ed3\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\ce3f8887b8b04b706c911cea89aa3fd1\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\a3d3e907b49409c101b83234dc8ff6f4\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\9c9d506b8646d14324217bb7fe7369ac\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\0cfd14a86dc35c95ba6a3ec49de6d39e\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
-INJECTED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
-INJECTED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
+ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
+INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
+INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
+INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\198e9963977503c474f73e75e19141d8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\43e58af3da771e5a7fdcb3688f113cdf\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\26852dbf9cdd847595c0a51d88173739\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\d126c2fe6d6af586f29c4a10c9ee1559\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\81f644571ce92f48c9f97f3d097803a5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\831c019bf7ce26926fe1789b267c4596\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\a8ffde90f90907a1c87d97c88dc85ec9\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\ca202c515852300834c45c9fcc6640e7\AndroidManifest.xml:17:1-24:12
+INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
+INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
+INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
 	package
-		ADDED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:2:5-34
-		INJECTED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml
+		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:2:5-34
+		INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
-		INJECTED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml
+		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
+		INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
-		INJECTED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml
+		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
+		INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:11-69
 application
-ADDED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:4:5-21:19
+ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:4:5-21:19
 	android:supportsRtl
-		ADDED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:9:9-35
+		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:9:9-35
 	android:label
-		ADDED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:7:9-41
+		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:7:9-41
 	android:roundIcon
-		ADDED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:8:9-54
+		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:8:9-54
 	android:icon
-		ADDED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:6:9-43
+		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:6:9-43
 	android:allowBackup
-		ADDED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:5:9-35
+		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:5:9-35
 	android:theme
-		ADDED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:10:9-40
-activity#com.nca.testandroid.classwork1.Classwork1Activity
-ADDED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:12:9-19:20
+		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:10:9-40
+activity#com.nca.testandroid.hw1.Homework1Activity
+ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:12:9-19:20
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:12:19-64
+		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:12:19-56
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:13:9-18:25
+ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:13:9-18:25
 action#android.intent.action.MAIN
-ADDED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:15:13-64
+ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:15:13-64
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:15:21-62
+		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:15:21-62
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:16:13-72
+ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:16:13-72
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml:16:23-70
+		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:16:23-70
 uses-sdk
-INJECTED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\f1f47096e3343b7fbe85ed5e59e2f727\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\f1f47096e3343b7fbe85ed5e59e2f727\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\45e7f86d0f02c331b43e0ab4ef6c6c9c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\45e7f86d0f02c331b43e0ab4ef6c6c9c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\81303369bf1d655357e7ea6dfc5fb890\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\81303369bf1d655357e7ea6dfc5fb890\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\457869534289304c93d1dcef17b61ed3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\457869534289304c93d1dcef17b61ed3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\ce3f8887b8b04b706c911cea89aa3fd1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\ce3f8887b8b04b706c911cea89aa3fd1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\a3d3e907b49409c101b83234dc8ff6f4\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\a3d3e907b49409c101b83234dc8ff6f4\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\9c9d506b8646d14324217bb7fe7369ac\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\9c9d506b8646d14324217bb7fe7369ac\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\0cfd14a86dc35c95ba6a3ec49de6d39e\AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\0cfd14a86dc35c95ba6a3ec49de6d39e\AndroidManifest.xml:20:5-22:41
-INJECTED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml
+INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml
+INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\198e9963977503c474f73e75e19141d8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\198e9963977503c474f73e75e19141d8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\43e58af3da771e5a7fdcb3688f113cdf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\43e58af3da771e5a7fdcb3688f113cdf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\26852dbf9cdd847595c0a51d88173739\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\26852dbf9cdd847595c0a51d88173739\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\d126c2fe6d6af586f29c4a10c9ee1559\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\d126c2fe6d6af586f29c4a10c9ee1559\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\81f644571ce92f48c9f97f3d097803a5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\81f644571ce92f48c9f97f3d097803a5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\831c019bf7ce26926fe1789b267c4596\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\831c019bf7ce26926fe1789b267c4596\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\a8ffde90f90907a1c87d97c88dc85ec9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\a8ffde90f90907a1c87d97c88dc85ec9\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\ca202c515852300834c45c9fcc6640e7\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\ca202c515852300834c45c9fcc6640e7\AndroidManifest.xml:20:5-22:41
+INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml
+INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml
+		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\user\AndroidStudioProjects\TestAndroid\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml
+		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml

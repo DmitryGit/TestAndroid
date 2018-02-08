@@ -1,4 +1,4 @@
-#Mon Feb 05 20:53:44 MSK 2018
-base.0=C\:\\Users\\user\\AndroidStudioProjects\\TestAndroid\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\5
+#Wed Feb 07 21:16:21 MSK 2018
+base.0=D\:\\Work\\GitHub\\TestAndroid\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\30
 path.0=classes.dex
 renamed.0=classes.dex
