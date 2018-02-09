@@ -4,6 +4,6 @@
 .idea
 .DS_Store
 build
-app
+/app
 /captures
 .externalNativeBuild
