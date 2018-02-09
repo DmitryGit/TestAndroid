@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
-INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
-INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
-INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
+ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-28:12
+INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-28:12
+INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-28:12
+INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-28:12
 MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\198e9963977503c474f73e75e19141d8\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\43e58af3da771e5a7fdcb3688f113cdf\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\26852dbf9cdd847595c0a51d88173739\AndroidManifest.xml:17:1-22:12
@@ -12,25 +12,25 @@ MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\Админи
 MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\831c019bf7ce26926fe1789b267c4596\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\a8ffde90f90907a1c87d97c88dc85ec9\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Администратор\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\ca202c515852300834c45c9fcc6640e7\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
-INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
-INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
+INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-28:12
+INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-28:12
+INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-28:12
 	package
 		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:2:5-34
 		INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml
-		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
+		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-28:12
 		INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml
-		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-22:12
+		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:1-28:12
 		INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:1:11-69
 application
-ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:4:5-21:19
+ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:4:5-27:19
 	android:supportsRtl
 		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:9:9-35
 	android:label
@@ -43,20 +43,28 @@ ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:4:5-21:19
 		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:5:9-35
 	android:theme
 		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:10:9-40
-activity#com.nca.testandroid.hw1.Homework1Activity
-ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:12:9-19:20
+activity#com.nca.testandroid.classwork2.NextActivity
+ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:14:9-17:20
+	android:parentActivityName
+		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:16:13-72
 	android:name
-		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:12:19-56
+		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:15:13-52
+activity#com.nca.testandroid.classwork2.Classwork2Activity
+ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:18:9-25:20
+	android:screenOrientation
+		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:19:13-49
+	android:name
+		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:18:19-64
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:13:9-18:25
+ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:21:13-24:29
 action#android.intent.action.MAIN
-ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:15:13-64
+ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:22:17-68
 	android:name
-		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:15:21-62
+		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:16:13-72
+ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:23:17-76
 	android:name
-		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:16:23-70
+		ADDED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml:23:27-74
 uses-sdk
 INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Work\GitHub\TestAndroid\app\src\main\AndroidManifest.xml

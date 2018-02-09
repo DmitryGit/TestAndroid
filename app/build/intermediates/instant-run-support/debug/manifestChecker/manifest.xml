@@ -17,7 +17,18 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.nca.testandroid.hw1.Homework1Activity" >
+
+        <!-- <activity android:name=".hw1.Homework1Activity"> -->
+
+        <activity
+            android:name="com.nca.testandroid.classwork2.NextActivity"
+            android:parentActivityName="com.nca.testandroid.classwork2.Classwork2Activity" >
+        </activity>
+        <activity
+            android:name="com.nca.testandroid.classwork2.Classwork2Activity"
+            android:screenOrientation="portrait" >
+
+            <!-- android:noHistory="true"> -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
