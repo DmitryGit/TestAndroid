@@ -9,14 +9,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!--<activity android:name=".hw1.Homework1Activity">-->
+        <!--<activity android:name=".hw1.Homework1Activity"/>-->
+        <!--<activity android:name=".hw2.Homework2Activity"/>-->
 
         <activity
-            android:name=".classwork2.NextActivity"
-            android:parentActivityName=".classwork2.Classwork2Activity">
+            android:name=".hw1.Homework1Activity"
+            android:parentActivityName=".hw2.HomeworkMain">
         </activity>
-        <activity android:name=".classwork2.Classwork2Activity"
-            android:screenOrientation="portrait">
+
+        <activity
+            android:name=".hw2.Homework2Activity"
+            android:parentActivityName=".hw2.HomeworkMain">
+        </activity>
+
+        <activity android:name=".hw2.HomeworkMain">
+            <!--android:screenOrientation="portrait">-->
             <!--android:noHistory="true">-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

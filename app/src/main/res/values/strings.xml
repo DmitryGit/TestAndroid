@@ -3,4 +3,7 @@
     <string name="textView1">Строка 1</string>
     <string name="textView2">String 2</string>
     <string name="button">Exchange</string>
+
+    <string name="button_hw1">ДЗ 1</string>
+    <string name="button_hw2">ДЗ 2</string>
 </resources>
