@@ -22,7 +22,16 @@
             android:parentActivityName=".hw2.HomeworkMain">
         </activity>
 
-        <activity android:name=".hw2.HomeworkMain">
+        <!--<activity android:name=".hw2.HomeworkMain">-->
+            <!--&lt;!&ndash;android:screenOrientation="portrait">&ndash;&gt;-->
+            <!--&lt;!&ndash;android:noHistory="true">&ndash;&gt;-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN"/>-->
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <activity android:name=".classwork3.Classwork3Activity">
             <!--android:screenOrientation="portrait">-->
             <!--android:noHistory="true">-->
             <intent-filter>
