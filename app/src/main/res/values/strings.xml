@@ -4,10 +4,16 @@
     <string name="textView2">String 2</string>
     <string name="button">Exchange</string>
 
-    <string name="button_hw1">ДЗ 1</string>
-    <string name="button_hw2">ДЗ 2</string>
+    <string name="button_hw1">HW 1</string>
+    <string name="button_hw2">HW 2</string>
+    <string name="button_hw3">HW 3</string>
 
 
-    <string name="button1">Кнопка 1</string>
-    <string name="button2">Кнопка 2</string>
+    <string name="button1">Button 1</string>
+    <string name="button2">Button 2</string>
+    <string name="buttonLoadImage">Load Image</string>
+    <string name="ImageURL">Image URL</string>
+    <string name="picture_url_hw3">https://static-s.aa-cdn.net/img/ios/1057332907/91211f3ab2c85ea62ea7899c982ffb13?v=1</string>
+    <!--<string name="accessNetworkState">ACCESS_NETWORK_STATE</string>-->
+
 </resources>

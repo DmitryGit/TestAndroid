@@ -1,6 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.nca.testandroid">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,16 +25,12 @@
             android:parentActivityName=".hw2.HomeworkMain">
         </activity>
 
-        <!--<activity android:name=".hw2.HomeworkMain">-->
-            <!--&lt;!&ndash;android:screenOrientation="portrait">&ndash;&gt;-->
-            <!--&lt;!&ndash;android:noHistory="true">&ndash;&gt;-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN"/>-->
-                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
-            <!--</intent-filter>-->
-        <!--</activity>-->
+        <activity
+            android:name=".hw3.Homework3Activity"
+            android:parentActivityName=".hw2.HomeworkMain">
+        </activity>
 
-        <activity android:name=".classwork3.Classwork3Activity">
+        <activity android:name=".hw2.HomeworkMain">
             <!--android:screenOrientation="portrait">-->
             <!--android:noHistory="true">-->
             <intent-filter>
@@ -39,6 +38,15 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <!--<activity android:name=".classwork3.Classwork3Activity">-->
+            <!--&lt;!&ndash;android:screenOrientation="portrait">&ndash;&gt;-->
+            <!--&lt;!&ndash;android:noHistory="true">&ndash;&gt;-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN"/>-->
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
 
     </application>
 </manifest>
