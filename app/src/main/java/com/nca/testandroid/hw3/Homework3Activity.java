@@ -1,5 +1,6 @@
 package com.nca.testandroid.hw3;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -11,10 +12,7 @@ import android.widget.TextView;
 
 import com.nca.testandroid.BuildConfig;
 import com.nca.testandroid.R;
-import com.nca.testandroid.utils.GlideApp;
 import com.nca.testandroid.utils.MyAppGlideModule;
-
-import static com.nca.testandroid.utils.MyAppGlideModule.showImage;
 
 public class Homework3Activity extends AppCompatActivity implements View.OnClickListener {
 

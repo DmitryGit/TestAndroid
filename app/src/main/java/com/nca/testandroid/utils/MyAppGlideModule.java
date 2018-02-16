@@ -12,6 +12,8 @@ public final class MyAppGlideModule extends AppGlideModule {
     public static void showImage(Context context, String url, ImageView imageView) {
         GlideApp.with(context)
                 .load((url == null || url.isEmpty())? imageView.getContentDescription(): url)
+                .placeholder(android.R.drawable.progress_indeterminate_horizontal)
+                .error(android.R.drawable.ic_delete)
                 .into(imageView);
 
     }
