@@ -29,17 +29,8 @@
             android:name=".hw3.Homework3Activity"
             android:parentActivityName=".hw2.HomeworkMain">
         </activity>
-
-        <activity android:name=".hw2.HomeworkMain">
-            <!--android:screenOrientation="portrait">-->
-            <!--android:noHistory="true">-->
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
-
-        <!--<activity android:name=".classwork3.Classwork3Activity">-->
+        <!--// TextUtils.IsEmpty() - проверка на null-->
+        <!--<activity android:name=".hw2.HomeworkMain">-->
             <!--&lt;!&ndash;android:screenOrientation="portrait">&ndash;&gt;-->
             <!--&lt;!&ndash;android:noHistory="true">&ndash;&gt;-->
             <!--<intent-filter>-->
@@ -47,6 +38,15 @@
                 <!--<category android:name="android.intent.category.LAUNCHER"/>-->
             <!--</intent-filter>-->
         <!--</activity>-->
+
+        <activity android:name=".classwork4.Classwork4Activity">
+            <!--android:screenOrientation="portrait">-->
+            <!--android:noHistory="true">-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
 
     </application>
 </manifest>
