@@ -39,7 +39,6 @@ public class Homework3Activity extends AppCompatActivity implements View.OnClick
         textView.setText(BuildConfig.API_ENDPOINT);
 
         imageView = findViewById(R.id.imageView);
-        imageView.getContentDescription();
 
         editText = findViewById(R.id.editText);
 
