@@ -120,11 +120,7 @@ public class WatchView extends View {
         canvas.restore();
 
 //        canvas.drawRect(rect, paint);
-
         //        canvas.drawArc();
-//        canvas.save();
-//        canvas.rotate(90, cx, cy);
-//        canvas.restore();
 
         int size = 120;
         paint2.setColor(Color.GREEN);

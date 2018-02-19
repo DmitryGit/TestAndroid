@@ -22,10 +22,6 @@ public class Homework4Activity extends AppCompatActivity implements View.OnClick
     private View viewWatch;
     AnimationDrawable frameAnimation;
 
-    private TextView textView9;
-    private TextView textView12;
-    private TextView textView3;
-    private TextView textView6;
 
     @Override
     public void onClick(View v) {
@@ -48,9 +44,5 @@ public class Homework4Activity extends AppCompatActivity implements View.OnClick
         // Start the animation (looped playback by default).
         frameAnimation.start();
 
-        textView9 = findViewById(R.id.d9);
-        textView12 = findViewById(R.id.d12);
-        textView3 = findViewById(R.id.d3);
-        textView6 = findViewById(R.id.d6);
     }
 }
