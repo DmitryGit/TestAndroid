@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1190e9"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+<!-- ScrolView Liner (Frame) View-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/wifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_wifi_black_24px" />
+            <!--android:stateListAnimator="@anim/owl"-->
+
+
+    </LinearLayout>
+    <!--android:src="@drawable/bee"-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/main_activity_magin"-->
+        <!--android:src="@drawable/bee"-->
+        <!--app:srcCompat="@drawable/ic_smoke_free_black_24dp"-->
+        <!--/>-->
+    <!--android:src="@drawable/bee"-->
+
+ </LinearLayout>

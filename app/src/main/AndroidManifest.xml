@@ -35,17 +35,14 @@
             android:parentActivityName=".hw2.HomeworkMain">
         </activity>
 
-        <!--&lt;!&ndash;// TextUtils.IsEmpty() - проверка на null&ndash;&gt;-->
-        <!--<activity android:name=".hw2.HomeworkMain">-->
-            <!--&lt;!&ndash;android:screenOrientation="portrait">&ndash;&gt;-->
-            <!--&lt;!&ndash;android:noHistory="true">&ndash;&gt;-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN"/>-->
-                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
-            <!--</intent-filter>-->
+        <!--<activity-->
+            <!--android:name=".hw5.Homework5Activity"-->
+            <!--android:parentActivityName=".hw2.HomeworkMain">-->
         <!--</activity>-->
 
-        <activity android:name=".classwork5.Classwork5Activity">
+        <!--// TextUtils.IsEmpty() - проверка на null-->
+        <!--<activity android:name=".hw2.HomeworkMain">-->
+        <activity android:name=".hw5.Homework5Activity">
             <!--android:screenOrientation="portrait">-->
             <!--android:noHistory="true">-->
             <intent-filter>
@@ -54,14 +51,23 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".classwork5.MyReceiver">
-            <intent-filter>
-                <action android:name="android.intent.action.AIRPLANE_MODE"/>
-            </intent-filter>
-        </receiver>
+        <!--<activity android:name=".classwork5.Classwork5Activity">-->
+            <!--&lt;!&ndash;android:screenOrientation="portrait">&ndash;&gt;-->
+            <!--&lt;!&ndash;android:noHistory="true">&ndash;&gt;-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN"/>-->
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
 
-        <service android:name=".classwork5.MyService"/>
-        <service android:name=".classwork5.MyIntentService"/>
+        <!--<receiver android:name=".classwork5.MyReceiver">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.AIRPLANE_MODE"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--<service android:name=".classwork5.MyService"/>-->
+        <!--<service android:name=".classwork5.MyIntentService"/>-->
 
     </application>
 </manifest>
