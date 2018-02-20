@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TestAndroid</string>
+    <string name="textView1">Строка 1</string>
+    <string name="textView2">String 2</string>
+    <string name="button">Exchange</string>
+
+    <string name="button_hw1">ДЗ 1</string>
+    <string name="button_hw2">ДЗ 2</string>
+    <string name="button_hw3">ДЗ 3</string>
+
+    <string name="button1">Кнопка РУС 1</string>
+    <string name="button2">Кнопка РУС 2</string>
+    <string name="buttonLoadImage">Загрузить картинку</string>
+    <string name="ImageURL">Адрес картинки</string>
+</resources>
