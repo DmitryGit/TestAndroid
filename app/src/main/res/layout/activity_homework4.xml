@@ -7,19 +7,15 @@
     android:orientation="horizontal"
     android:weightSum="100">
 
-<!-- ScrolView Liner (Frame) View-->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:weightSum="5">
+        android:orientation="vertical">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_margin="@dimen/main_activity_magin"
-            android:layout_weight="3"
             android:id="@+id/imageOwl"
             android:layout_gravity="center"
             android:scaleType="fitCenter"/>
@@ -32,15 +28,5 @@
             android:visibility="gone"/>
 
     </LinearLayout>
-    <!--android:src="@drawable/bee"-->
-
-    <!--<ImageView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginTop="@dimen/main_activity_magin"-->
-        <!--android:src="@drawable/bee"-->
-        <!--app:srcCompat="@drawable/ic_smoke_free_black_24dp"-->
-        <!--/>-->
-    <!--android:src="@drawable/bee"-->
 
  </LinearLayout>

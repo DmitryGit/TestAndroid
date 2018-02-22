@@ -89,6 +89,31 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorBlack"
+        android:minHeight="10dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorRed"
+        android:minHeight="240dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/colorYellow" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorBlue" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -37,14 +37,14 @@
             android:parentActivityName=".hw2.HomeworkMain">
         </activity>
 
-        <!--<activity-->
-            <!--android:name=".hw5.Homework5Activity"-->
-            <!--android:parentActivityName=".hw2.HomeworkMain">-->
-        <!--</activity>-->
+        <activity
+            android:name=".hw5.Homework5Activity"
+            android:parentActivityName=".hw2.HomeworkMain">
+        </activity>
 
         <!--// TextUtils.IsEmpty() - проверка на null-->
-        <!--<activity android:name=".hw2.HomeworkMain">-->
-        <activity android:name=".hw5.Homework5Activity">
+        <activity android:name=".hw2.HomeworkMain">
+        <!--<activity android:name=".hw5.Homework5Activity">-->
             <!--android:screenOrientation="portrait">-->
             <!--android:noHistory="true">-->
             <intent-filter>
@@ -70,6 +70,7 @@
 
         <!--<service android:name=".classwork5.MyService"/>-->
         <!--<service android:name=".classwork5.MyIntentService"/>-->
+        <service android:name=".hw5.WiFiService"/>
 
     </application>
 </manifest>
