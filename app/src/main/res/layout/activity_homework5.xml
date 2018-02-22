@@ -10,6 +10,7 @@
 <!-- ScrolView Liner (Frame) View-->
 
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -17,10 +18,18 @@
             android:id="@+id/wifi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_gravity="top"
             app:srcCompat="@drawable/ic_wifi_black_24px" />
             <!--android:stateListAnimator="@anim/owl"-->
 
+        <ToggleButton
+            android:id="@+id/wifi_switcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="@string/wifi_off"
+            android:textOn="@string/wifi_on"
+            android:checked="false"
+            android:layout_gravity="center"/>
 
     </LinearLayout>
     <!--android:src="@drawable/bee"-->
