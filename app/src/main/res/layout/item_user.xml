@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -12,7 +12,7 @@
 
     <ImageView
         android:id="@+id/imageView"
-        tools:srcUrl=""
+        tools:src="@drawable/sova_anmation_1"
         android:layout_gravity="start"
         android:layout_width="50dp"
         android:layout_height="wrap_content" />
@@ -21,6 +21,7 @@
     <TextView
         android:id="@+id/nameTextView"
         android:textSize="14sp"
+        android:layout_marginStart="60dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="userName"/>
@@ -28,8 +29,19 @@
     <TextView
         android:id="@+id/surnameTextView"
         android:textSize="14sp"
+        android:paddingTop="20dp"
+        android:layout_marginStart="60dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="userName"/>
+        tools:text="peopleSurname"/>
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/ageTextView"
+        android:textSize="14sp"
+        android:layout_marginStart="230dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="peopleAge"/>
+
+
+</RelativeLayout>
