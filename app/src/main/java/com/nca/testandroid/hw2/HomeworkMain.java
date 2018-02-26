@@ -11,6 +11,7 @@ import com.nca.testandroid.R;
 import com.nca.testandroid.hw1.Homework1Activity;
 import com.nca.testandroid.hw3.Homework3Activity;
 import com.nca.testandroid.hw4.Homework4Activity;
+import com.nca.testandroid.hw5.Homework5Activity;
 import com.squareup.leakcanary.LeakCanary;
 
 public class HomeworkMain extends Activity implements View.OnClickListener {
@@ -19,6 +20,7 @@ public class HomeworkMain extends Activity implements View.OnClickListener {
     private Button button_hw2;
     private Button button_hw3;
     private Button button_hw4;
+    private Button button_hw5;
 
     @Override
     public void onClick(View view) {
@@ -37,6 +39,9 @@ public class HomeworkMain extends Activity implements View.OnClickListener {
                 break;
             case R.id.button_hw4:
                 activity = Homework4Activity.class;
+                break;
+            case R.id.button_hw5:
+                activity = Homework5Activity.class;
                 break;
             default:
                 activity = HomeworkMain.class;
@@ -66,11 +71,13 @@ public class HomeworkMain extends Activity implements View.OnClickListener {
         button_hw2 = findViewById(R.id.button_hw2);
         button_hw3 = findViewById(R.id.button_hw3);
         button_hw4 = findViewById(R.id.button_hw4);
+        button_hw5 = findViewById(R.id.button_hw5);
 
         button_hw1.setOnClickListener(this);
         button_hw2.setOnClickListener(this);
         button_hw3.setOnClickListener(this);
         button_hw4.setOnClickListener(this);
+        button_hw5.setOnClickListener(this);
     }
 
     @Override

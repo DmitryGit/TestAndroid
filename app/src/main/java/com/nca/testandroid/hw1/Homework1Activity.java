@@ -34,6 +34,8 @@ public class Homework1Activity extends AppCompatActivity implements View.OnClick
         tv2.setText(textView1Text);
     }
 
+    // имплемент OnClickListener на текущую активити, привязку см. в xml файле
+    // как вариант можно textView1.setOnClickListener(this)
     @Override
     public void onClick(View v) {
         exchange(textView1, textView2);

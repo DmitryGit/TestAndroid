@@ -35,7 +35,7 @@ public class Homework4Activity extends AppCompatActivity implements View.OnClick
     protected void onCreate(@Nullable Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_homework4  );
+        setContentView(R.layout.activity_homework4);
 
         imageOwl = findViewById(R.id.imageOwl);
         imageOwl.setOnClickListener(this);

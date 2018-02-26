@@ -8,27 +8,23 @@ import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.widget.CompoundButton;
+import android.view.View;
+
 import android.widget.ImageView;
 import android.widget.ToggleButton;
-
-
 import com.nca.testandroid.R;
-import com.nca.testandroid.classwork1.Classwork1Activity;
 
 public class Homework5Activity extends AppCompatActivity {
 
     private ImageView imageView;
-    ToggleButton toggle;
-    WiFiService mService;
-    boolean mBound = false;
-
+    private ToggleButton toggle;
+    private WiFiService mService;
+    private boolean mBound = false;
 
     private BroadcastReceiver innerReceiver = new BroadcastReceiver(){
 
@@ -36,10 +32,14 @@ public class Homework5Activity extends AppCompatActivity {
             ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
             NetworkInfo netInfo = cm.getActiveNetworkInfo();
             if (netInfo != null && netInfo.isConnected() && netInfo.getType() == ConnectivityManager.TYPE_WIFI) {
-                Log.e("MyBroadcastReceiver", " WI-FI ON");
+                Log.e("BroadcastReceiver", " WI-FI ON");
+                toggle.getTextOn();
+                toggle.setChecked(true);
                 imageView.setImageResource(R.drawable.ic_wifi_white_24px);
             } else {
-                Log.e("MyBroadcastReceiver", " WI-FI OFF");
+                Log.e("BroadcastReceiver", " WI-FI OFF");
+                toggle.getTextOff();
+                toggle.setChecked(false);
                 imageView.setImageResource(R.drawable.ic_wifi_black_24px);
             }
         }
@@ -51,7 +51,18 @@ public class Homework5Activity extends AppCompatActivity {
         setContentView(R.layout.activity_homework5);
         imageView = findViewById(R.id.wifi);
         toggle = findViewById(R.id.wifi_switcher);
-
+        toggle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (mBound) {
+                    if (toggle.isChecked()) {
+                        mService.setWiFiStatus(true);
+                    } else {
+                        mService.setWiFiStatus(false);
+                    }
+                }
+            }
+        });
     }
 
     @Override
@@ -59,52 +70,33 @@ public class Homework5Activity extends AppCompatActivity {
         super.onStart();
         IntentFilter intentFilter = new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION);
         registerReceiver(innerReceiver, intentFilter);
-
         Intent intent = new Intent(this, WiFiService.class);
-        // привязка компонента unbind - отвязка
-        //        bindService(intent, MyService.class)
         bindService(intent, mConnection, Context.BIND_AUTO_CREATE);
-
-
-        //Настраиваем слушателя изменения состояния переключателя:
-//        toggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//            @Override
-//            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-//                //Если Wi-FI включен - Toast сообщение об этом:
-//                if (isChecked) {
-//                    mService.setWiFiStatus(true);
-//                }
-//                //Если Wi-FI выключен - Toast сообщение об этом:
-//                else {
-//                    mService.setWiFiStatus(false);
-//                }
-//            }
-//
-//        });
     }
 
     @Override
     protected void onStop() {
         super.onStop();
         unregisterReceiver(innerReceiver);
-
-        unbindService(mConnection);
+        if (mBound) {
+            unbindService(mConnection);
+            mBound = false;
+        }
     }
-
 
     private ServiceConnection mConnection = new ServiceConnection() {
 
         @Override
-        public void onServiceConnected(ComponentName className,
-                                       IBinder service) {
-            // We've bound to LocalService, cast the IBinder and get LocalService instance
+        public void onServiceConnected(ComponentName name, IBinder service) {
+            Log.e("ServiceConnection", " onServiceConnected");
             WiFiService.LocalBinder binder = (WiFiService.LocalBinder) service;
             mService = binder.getService();
             mBound = true;
         }
 
         @Override
-        public void onServiceDisconnected(ComponentName arg0) {
+        public void onServiceDisconnected(ComponentName name) {
+            Log.e("ServiceConnection", " onServiceDisconnected");
             mBound = false;
         }
     };

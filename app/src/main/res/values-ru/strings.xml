@@ -7,9 +7,16 @@
     <string name="button_hw1">ДЗ 1</string>
     <string name="button_hw2">ДЗ 2</string>
     <string name="button_hw3">ДЗ 3</string>
+    <string name="button_hw4">ДЗ 4</string>
+    <string name="button_hw5">ДЗ 5</string>
 
     <string name="button1">Кнопка РУС 1</string>
     <string name="button2">Кнопка РУС 2</string>
     <string name="buttonLoadImage">Загрузить картинку</string>
     <string name="ImageURL">Адрес картинки</string>
+
+    <string name="picture_url_hw3">https://static-s.aa-cdn.net/img/ios/1057332907/91211f3ab2c85ea62ea7899c982ffb13?v=1</string>
+    <string name="wifi_on">Wi-Fi ON</string>
+    <string name="wifi_off">Wi-Fi OFF</string>
+
 </resources>

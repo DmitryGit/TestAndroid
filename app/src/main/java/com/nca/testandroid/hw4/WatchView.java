@@ -4,16 +4,11 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.RectF;
 import android.os.Build;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
-import android.view.MotionEvent;
 import android.view.View;
-import android.widget.AnalogClock;
-import android.widget.TextView;
-
 import com.nca.testandroid.R;
 
 import java.util.Calendar;
@@ -27,9 +22,6 @@ public class WatchView extends View {
     private float radius;
     private float cx;
     private float cy;
-    private float ch;
-    private float cw;
-    private RectF rect;
 
     private Date date;
     private Calendar calendar;
@@ -59,12 +51,9 @@ public class WatchView extends View {
         paint.setColor(Color.BLUE);
         paint2.setColor(Color.RED);
         paint.setAntiAlias(true);
-//        long time = new Date().getTime();
         date  = new Date();
         calendar = GregorianCalendar.getInstance();
         calendar.setTime(date);
-
-//        new AnalogClock
     }
 
     @Override
@@ -85,27 +74,14 @@ public class WatchView extends View {
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-        ch = h;
-        cw = w;
         radius = w > h? h/2: w/2;
         cx = w/2;
         cy = h/2;
-
-        float wRec = w * 0.9f;
-        float hRec = h * 0.2f;
-        rect = new RectF();
-        rect.left = (w - wRec) / 2;
-        rect.right = w - rect.left;
-        rect.top = (h - hRec) / 2;;
-        rect.bottom = h - rect.top;;
-
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
-//        super.onDraw(canvas);
 
-//        invalidate();
         canvas.drawCircle(cx, cy, radius, paint);
 
         canvas.save();
@@ -118,9 +94,6 @@ public class WatchView extends View {
             canvas.rotate(30, cx, cy);
         }
         canvas.restore();
-
-//        canvas.drawRect(rect, paint);
-        //        canvas.drawArc();
 
         int size = 120;
         paint2.setColor(Color.GREEN);
@@ -148,30 +121,5 @@ public class WatchView extends View {
         canvas.restore();
 
 
-    }
-
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-
-        switch (event.getAction()) {
-            case MotionEvent.ACTION_DOWN: {
-
-                rect.contains(event.getX(), event.getY()); // проверка: попадает ли в квадрат
-
-                break;
-            }
-            case MotionEvent.ACTION_UP: {
-                break;
-            }
-            case MotionEvent.ACTION_MOVE: {
-                cx = event.getX();
-                cy = event.getY();
-                invalidate();
-                return false;
-//                break;
-            }
-        }
-        return true;
-//        return super.onTouchEvent(event);
     }
 }
