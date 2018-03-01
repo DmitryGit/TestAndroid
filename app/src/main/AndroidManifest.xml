@@ -42,6 +42,11 @@
             android:parentActivityName=".hw2.HomeworkMain">
         </activity>
 
+        <activity
+            android:name=".hw6.Homework6Activity"
+            android:parentActivityName=".hw2.HomeworkMain">
+        </activity>
+
         <!--<activity-->
             <!--android:name=".hw6.Homework6Activity"-->
             <!--android:parentActivityName=".hw2.HomeworkMain">-->
@@ -58,7 +63,7 @@
             <!--</intent-filter>-->
         <!--</activity>-->
 
-        <activity android:name=".classwork7.Classwork7Activity">
+        <activity android:name=".hw7.Homework7Activity">
             <!--android:screenOrientation="portrait">-->
             <!--android:noHistory="true">-->
             <intent-filter>
