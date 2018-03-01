@@ -20,6 +20,7 @@ final class JsonParser {
     static String readJsonFileFromAssets(Context context, String filename) {
         BufferedReader reader = null;
         String rawJson = "";
+        StringBuilder stringBuilder = new StringBuilder();;
         try {
             InputStream is = context.getAssets().open(filename, AssetManager.ACCESS_BUFFER);
             reader = new BufferedReader(
@@ -27,7 +28,8 @@ final class JsonParser {
 
             String mLine;
             while ((mLine = reader.readLine()) != null) {
-                rawJson += mLine;
+//                rawJson += mLine;
+                stringBuilder.append(mLine);
             }
         } catch (IOException e) {
             //log the exception
@@ -40,7 +42,8 @@ final class JsonParser {
                 }
             }
         }
-        return rawJson;
+        return stringBuilder.toString();
+//        return rawJson;
     }
 
     static List<?> parseFromJson (String jsonText, Class<?> cls) {
