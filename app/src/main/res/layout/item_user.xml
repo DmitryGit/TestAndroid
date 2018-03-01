@@ -35,6 +35,7 @@
         android:layout_height="wrap_content"
         tools:text="peopleSurname"/>
 
+    <!--добавлено для домашки№6-->
     <TextView
         android:id="@+id/ageTextView"
         android:textSize="14sp"
