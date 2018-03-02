@@ -60,7 +60,7 @@ public class Homework7Activity extends AppCompatActivity {
         setContentView(R.layout.activity_classwork7);
         super.onCreate(savedInstanceState);
 
-        subject.subscribe(v -> OneFragment.getInstance().addInt(v));
+//        subject.subscribe(v -> OneFragment.getInstance().addInt(v));
 
         buttonFragment = findViewById(R.id.buttonFragment);
         buttonFragment.setOnClickListener(new View.OnClickListener() {
