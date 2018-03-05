@@ -16,7 +16,29 @@ buildscript {
 }
 
 ext {
+    minSdkVersion = 18
+    targetSdkVersion = 27
+    compileSdkVersion = 27
+    buildToolsSdkVersion = "27.0.2"
+    rxjavaVersion = "2.1.10"
+    rxandroidVersion = "2.0.2"
+    gsonVersion = "2.8.2"
+    androidBuildingCompiler = '3.0.0'
 
+
+       dependencies = [
+        supportAppcompat:  "com.android.support:appcompat-v7:$buildToolsSdkVersion",
+        supportV4: "com.android.support:support-v4:$buildToolsSdkVersion",
+        supportDesign: "com.android.support:design:$buildToolsSdkVersion",
+
+        androidBuildingCompiler: "com.android.databinding:compiler:$androidBuildingCompiler",
+
+        rx2android: "io.reactivex.rxjava2:rxandroid:$rxandroidVersion",
+        rx2java: "io.reactivex.rxjava2:rxjava:$rxjavaVersion",
+
+        gson: "com.google.code.gson:gson:$gsonVersion"
+
+    ]
 }
 
 

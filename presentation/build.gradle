@@ -1,11 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsSdkVersion
+
     defaultConfig {
         applicationId "com.nca.testandroid"
-        minSdkVersion 18
-        targetSdkVersion 27
+
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -38,28 +42,54 @@ android {
 //        }
 
     }
-    compileOptions {
-        targetCompatibility 1.8
-        sourceCompatibility 1.8
+//    compileOptions {
+//        targetCompatibility 1.8
+//        sourceCompatibility 1.8
+//    }
+
+    dataBinding {
+        enabled = true;
     }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:27.0.2'
-    implementation 'com.android.support:support-v4:27.0.2'
-    implementation 'com.android.support:design:27.0.2'
-//    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    implementation 'com.google.code.gson:gson:2.8.2'
+
+    def dependency = rootProject.ext.dependencies
+
+    implementation dependency.supportAppcompat
+    implementation dependency.supportV4
+    implementation dependency.supportDesign
+
+    implementation dependency.rx2android
+
+    annotationProcessor dependency.androidBuildingCompiler
+
+    api project(path: ':data')
+
+//************************************ старая часть *********************
+//    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    implementation 'com.android.support:appcompat-v7:27.0.2'
+//    implementation 'com.android.support:support-v4:27.0.2'
+//    implementation 'com.android.support:design:27.0.2'
+////    testImplementation 'junit:junit:4.12'
+////    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+////    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+//
     implementation 'com.github.bumptech.glide:glide:4.6.1'
+//
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
-    implementation "io.reactivex.rxjava2:rxjava:2.1.10"
-    implementation "io.reactivex.rxjava2:rxandroid:2.0.2"
+//
+//    implementation "io.reactivex.rxjava2:rxandroid:2.0.2"
+//    implementation "io.reactivex.rxjava2:rxjava:2.1.10"
+//
+//// эти нужно будет выкинуть из проекта после окончания тест_андроид
+    implementation 'com.google.code.gson:gson:2.8.2'
+
 //    RxJava
 //    RxAndroid
 //    RxClick
+//************************************ старая часть *********************
+
 }

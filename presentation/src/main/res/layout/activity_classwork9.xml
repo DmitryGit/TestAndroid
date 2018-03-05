@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="myEntity"
+            type="com.nca.testandroid.classwork9.MyEntity"/>
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1190e9"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorYellow"
+        android:textSize="30sp"
+        android:text="@{myEntity.text}"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:background="#11e931"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorYellow"
+        android:visibility="@{myEntity.buttonVisible ? View.VISIBLE : View.GONE}"
+        android:text="@{myEntity.textButton}"
+        android:onClick="@{myEntity::buttonClick}"/>
+
+
+</LinearLayout>
+
+</layout>

@@ -63,7 +63,7 @@
             <!--</intent-filter>-->
         <!--</activity>-->
 
-        <activity android:name=".classwork8.Classwork8Activity">
+        <activity android:name=".classwork9.Classwork9Activity">
             <!--android:screenOrientation="portrait">-->
             <!--android:noHistory="true">-->
             <intent-filter>
