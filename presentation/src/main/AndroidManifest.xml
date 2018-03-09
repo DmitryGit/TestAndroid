@@ -47,6 +47,21 @@
             android:parentActivityName=".hw2.HomeworkMain">
         </activity>
 
+        <activity
+            android:name=".hw7.Homework7Activity"
+            android:parentActivityName=".hw2.HomeworkMain">
+        </activity>
+
+        <!--<activity-->
+            <!--android:name=".hw8.Homework8Activity"-->
+            <!--android:parentActivityName=".hw2.HomeworkMain">-->
+        <!--</activity>-->
+
+        <!--<activity-->
+            <!--android:name=".hw9.Homework9Activity"-->
+            <!--android:parentActivityName=".hw2.HomeworkMain">-->
+        <!--</activity>-->
+
         <!--<activity-->
             <!--android:name=".hw6.Homework6Activity"-->
             <!--android:parentActivityName=".hw2.HomeworkMain">-->
@@ -63,17 +78,7 @@
             <!--</intent-filter>-->
         <!--</activity>-->
 
-        <activity android:name=".classwork9.Classwork9Activity">
-            <!--android:screenOrientation="portrait">-->
-            <!--android:noHistory="true">-->
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
-
-
-        <!--<activity android:name=".hw7.Homework7Activity">-->
+        <!--<activity android:name=".classwork9.Classwork9Activity">-->
             <!--&lt;!&ndash;android:screenOrientation="portrait">&ndash;&gt;-->
             <!--&lt;!&ndash;android:noHistory="true">&ndash;&gt;-->
             <!--<intent-filter>-->
@@ -81,6 +86,16 @@
                 <!--<category android:name="android.intent.category.LAUNCHER"/>-->
             <!--</intent-filter>-->
         <!--</activity>-->
+
+
+        <activity android:name=".hw8.Homework8Activity">
+            <!--android:screenOrientation="portrait">-->
+            <!--android:noHistory="true">-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
 
 
         <!--<receiver android:name=".classwork5.MyReceiver">-->

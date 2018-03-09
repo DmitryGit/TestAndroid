@@ -23,7 +23,7 @@ public class Homework7Activity extends AppCompatActivity {
 
     PublishSubject<Integer> subject = PublishSubject.create();
 
-    private static int val = 0;
+    static Integer val = 0;
 
     private static final String TAG = Classwork1Activity.class.getSimpleName();
     private static final String SHARED_PREFS_NAME = "ffffff";
@@ -62,12 +62,14 @@ public class Homework7Activity extends AppCompatActivity {
 
 //        subject.subscribe(v -> OneFragment.getInstance().addInt(v));
 
+
         buttonFragment = findViewById(R.id.buttonFragment);
         buttonFragment.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                subject.onNext(1);
+                subject.onNext(val);
+                val++;
                 showFragment(OneFragment.getInstance(), true);
 
 //            Intent intent = new Intent(Classwork7Activity.this, NextActivity.class);

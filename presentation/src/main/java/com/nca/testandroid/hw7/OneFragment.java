@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.nca.testandroid.R;
+import com.nca.testandroid.hw4.Homework4Activity;
+import com.nca.testandroid.hw6.Homework6Activity;
 
 import io.reactivex.Observer;
 
@@ -18,11 +20,6 @@ public class OneFragment extends Fragment {
 
     public static OneFragment getInstance() {
         return new OneFragment();
-    }
-
-    private static Integer ii = 0;
-    public Integer addInt(Integer i) {
-        return ii += i;
     }
 
     @Nullable
@@ -36,7 +33,7 @@ public class OneFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         // все действия как и в активити onCreate - инициализация UI
         TextView textView = view.findViewById(R.id.integer);
-        textView.setText(ii.toString());
+        textView.setText(String.valueOf(Homework7Activity.val));
 
     }
 
