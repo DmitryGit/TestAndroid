@@ -25,8 +25,6 @@ public class Homework8Activity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.container, OneFragment.getInstance());
         fragmentTransaction.commit();
-
-
     }
 }
 

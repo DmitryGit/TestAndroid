@@ -25,8 +25,8 @@ import io.reactivex.subjects.ReplaySubject;
 public class OneFragment extends Fragment {
 
     private TextView textView;
-    public ReplaySubject<Integer> publishSubject = ReplaySubject.create();
     private Disposable disposable;
+    String textViewValue;
 
     public static OneFragment getInstance() {
         return new OneFragment();
@@ -43,7 +43,8 @@ public class OneFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         // все действия как и в активити onCreate - инициализация UI
         textView = view.findViewById(R.id.textView);
-        disposable = publishSubject
+        textView.setText("Запускаем...");
+        disposable = Observable
                 .interval(2, TimeUnit.SECONDS)
                 .map(new Function<Long, Integer>() {
                     @Override
@@ -66,12 +67,13 @@ public class OneFragment extends Fragment {
                 .subscribe( new Consumer<String>() {
                     @Override
                     public void accept(String string) throws Exception {
-                        textView.setText(string);
+                        setTextView(string);
                     }
                 }, new Consumer<Throwable>() {
                     @Override
                     public void accept(Throwable throwable) throws Exception {
-                        // сюда прилетают ошибки
+
+                       throwable.getCause(); // сюда прилетают ошибки
                     }
                 })
         ;
@@ -96,4 +98,16 @@ public class OneFragment extends Fragment {
         }
     }
 
+    private void setTextView(String s) {
+
+        textViewValue = s;
+
+        getActivity().runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                textView.setText(textViewValue);
+            }
+        });
+
+    }
 }

@@ -8,18 +8,20 @@ import android.support.v7.app.AppCompatActivity;
 import com.nca.testandroid.R;
 import com.nca.testandroid.databinding.ActivityHomework9Binding;
 
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
+import io.reactivex.Observable;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
 import io.reactivex.subjects.PublishSubject;
 public class Homework9Activity extends AppCompatActivity {
 
-    public PublishSubject<Integer> publishSubject = PublishSubject.create();
     private Disposable disposable;
     ActivityHomework9Binding binding;
     User user;
+    ArrayList<User> users = new ArrayList<>();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -27,12 +29,13 @@ public class Homework9Activity extends AppCompatActivity {
 
         binding = DataBindingUtil.setContentView(Homework9Activity.this, R.layout.activity_homework9);
 
-        disposable = publishSubject
-                .timer(4, TimeUnit.SECONDS)
+        disposable = Observable
+//                .timer(4, TimeUnit.SECONDS)
+                .interval(5, TimeUnit.SECONDS)
                 .map(new Function<Long, User>() {
                     @Override
                     public User apply(Long lon) throws Exception {
-                        return user;
+                        return users.get(lon.intValue());
                     }
                 })
                 .subscribe( new Consumer<User>() {
@@ -51,10 +54,9 @@ public class Homework9Activity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        user = new User("Никита", "Кожемяка", "из богатырей", 33, true, "http://oldtale.ru/images/nikita-kojemyaka.jpg");
-        publishSubject.just(user);
-//        user = new User("Олег", "3333", "Неизвестно", 33, true, "http://oldtale.ru/images/nikita-kojemyaka.jpg");
-//        publishSubject.just(user);
+        users.add(new User("Никита", "Кожемяка", "из богатырей", 33, true, "http://oldtale.ru/images/nikita-kojemyaka.jpg"));
+        users.add(new User("Варвара", "Краса", "длинная коса", 18, false, "http://tv.akado.ru/images/data/akadotv/picture/imgbig/468702/1.jpg"));
+        users.add(new User("Словей", "Разбойник", "бандит", 100, true, "http://www.bestiary.us/files/images/solovey-by-orlova.250x250.jpg"));
     }
 
     @Override
