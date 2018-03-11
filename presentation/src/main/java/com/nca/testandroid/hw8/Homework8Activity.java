@@ -14,9 +14,7 @@ import java.util.concurrent.TimeUnit;
 import io.reactivex.Observable;
 import io.reactivex.subjects.ReplaySubject;
 
-public class Homework8Activity extends AppCompatActivity implements PublishContract {
-
-    public ReplaySubject<Long> publishSubject = ReplaySubject.create();
+public class Homework8Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -29,11 +27,6 @@ public class Homework8Activity extends AppCompatActivity implements PublishContr
         fragmentTransaction.commit();
 
 
-    }
-
-    @Override
-    public Observable<Long> getObservable() {
-        return publishSubject;
     }
 }
 

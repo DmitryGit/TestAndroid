@@ -52,15 +52,15 @@
             android:parentActivityName=".hw2.HomeworkMain">
         </activity>
 
-        <!--<activity-->
-            <!--android:name=".hw8.Homework8Activity"-->
-            <!--android:parentActivityName=".hw2.HomeworkMain">-->
-        <!--</activity>-->
+        <activity
+            android:name=".hw8.Homework8Activity"
+            android:parentActivityName=".hw2.HomeworkMain">
+        </activity>
 
-        <!--<activity-->
-            <!--android:name=".hw9.Homework9Activity"-->
-            <!--android:parentActivityName=".hw2.HomeworkMain">-->
-        <!--</activity>-->
+        <activity
+            android:name=".hw9.Homework9Activity"
+            android:parentActivityName=".hw2.HomeworkMain">
+        </activity>
 
         <!--<activity-->
             <!--android:name=".hw6.Homework6Activity"-->
@@ -88,7 +88,8 @@
         <!--</activity>-->
 
 
-        <activity android:name=".hw8.Homework8Activity">
+        <!--<activity android:name=".hw9.Homework9Activity">-->
+        <activity android:name=".hw2.HomeworkMain">
             <!--android:screenOrientation="portrait">-->
             <!--android:noHistory="true">-->
             <intent-filter>

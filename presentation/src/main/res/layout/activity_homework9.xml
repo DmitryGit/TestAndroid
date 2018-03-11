@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="user" type="com.nca.testandroid.hw9.User"/>
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@{user.firstName ?? `---`}"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@{user.lastName ?? `---`}"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@{user.fatherName ?? `---`}"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@{`Возраст: ` + user.age}"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@{`Пол: ` + (user.isMan? `Мужик`:`Женщина`)}"/>
+        <ImageView
+            android:id="@+id/colorImage"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:imageUrl="@{user.imageUrl}"/>
+    </LinearLayout>
+</layout>
+
+    <!--String.valueOf(`Имя: ` +-->

@@ -15,6 +15,7 @@ import com.nca.testandroid.hw5.Homework5Activity;
 import com.nca.testandroid.hw6.Homework6Activity;
 import com.nca.testandroid.hw7.Homework7Activity;
 import com.nca.testandroid.hw8.Homework8Activity;
+import com.nca.testandroid.hw9.Homework9Activity;
 import com.squareup.leakcanary.LeakCanary;
 
 public class HomeworkMain extends Activity implements View.OnClickListener {
@@ -59,9 +60,9 @@ public class HomeworkMain extends Activity implements View.OnClickListener {
             case R.id.button_hw8:
                 activity = Homework8Activity.class;
                 break;
-//            case R.id.button_hw9:
-//                activity = Homework9Activity.class;
-//                break;
+            case R.id.button_hw9:
+                activity = Homework9Activity.class;
+                break;
             default:
                 activity = HomeworkMain.class;
         };
