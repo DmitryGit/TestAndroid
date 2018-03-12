@@ -78,18 +78,7 @@
             <!--</intent-filter>-->
         <!--</activity>-->
 
-        <!--<activity android:name=".classwork9.Classwork9Activity">-->
-            <!--&lt;!&ndash;android:screenOrientation="portrait">&ndash;&gt;-->
-            <!--&lt;!&ndash;android:noHistory="true">&ndash;&gt;-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN"/>-->
-                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
-            <!--</intent-filter>-->
-        <!--</activity>-->
-
-
-        <!--<activity android:name=".hw9.Homework9Activity">-->
-        <activity android:name=".hw2.HomeworkMain">
+        <activity android:name="com.nca.presentation.screen.user.UserActivity">
             <!--android:screenOrientation="portrait">-->
             <!--android:noHistory="true">-->
             <intent-filter>
@@ -97,6 +86,19 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <!--RXBinding-->
+        <!--mackUp services-->
+
+        <!--<activity android:name=".hw9.Homework9Activity">-->
+        <!--<activity android:name=".hw2.HomeworkMain">-->
+            <!--&lt;!&ndash;android:screenOrientation="portrait">&ndash;&gt;-->
+            <!--&lt;!&ndash;android:noHistory="true">&ndash;&gt;-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN"/>-->
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
 
 
         <!--<receiver android:name=".classwork5.MyReceiver">-->

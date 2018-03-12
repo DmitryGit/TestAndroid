@@ -52,7 +52,7 @@ final class JsonParser {
         GsonBuilder builder = new GsonBuilder();
         Gson gson = builder.create();
 
-        if (TextUtils.isEmpty(jsonText) && cls.equals(TestFile.class)) {
+        if (!TextUtils.isEmpty(jsonText) && cls.equals(TestFile.class)) {
             TestFile unParseJson = (TestFile) gson.fromJson(jsonText, cls);
             result = unParseJson.getPeople();
         }
