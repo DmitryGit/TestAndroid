@@ -17,4 +17,5 @@ public class UserActivity extends BaseMvvActivity<ActivityUserBinding, UserViewM
     public UserViewModel provideViewModel() {
         return new UserViewModel();
     }
+
 }

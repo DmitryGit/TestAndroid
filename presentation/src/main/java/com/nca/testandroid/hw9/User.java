@@ -26,10 +26,10 @@ public class User {
         this.imageUrl.set(imageURL);
     }
 
-    @BindingAdapter({"bind:imageUrl"})
-    public static void loadImage(ImageView view, String url) {
-//        Picasso.with(view.getContext()).load(url).error(error).into(view);
-        MyAppGlideModule.showImage(view.getContext(), url, view);
-    }
+//    @BindingAdapter({"bind:imageUrl"})
+//    public static void loadImage(ImageView view, String url) {
+////        Picasso.with(view.getContext()).load(url).error(error).into(view);
+//        MyAppGlideModule.showImage(view.getContext(), url, view);
+//    }
 
 }
