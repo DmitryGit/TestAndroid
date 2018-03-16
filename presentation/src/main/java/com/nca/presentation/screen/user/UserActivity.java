@@ -1,12 +1,13 @@
 package com.nca.presentation.screen.user;
 
+import android.arch.lifecycle.ViewModel;
+import android.arch.lifecycle.ViewModelProviders;
+
 import com.nca.presentation.base.BaseMvvActivity;
 import com.nca.testandroid.R;
 import com.nca.testandroid.databinding.ActivityUserBinding;
 
 public class UserActivity extends BaseMvvActivity<ActivityUserBinding, UserViewModel> {
-
-    private static final String TAG = UserActivity.class.getSimpleName();
 
     @Override
     public int provideLayoutId() {
@@ -15,7 +16,9 @@ public class UserActivity extends BaseMvvActivity<ActivityUserBinding, UserViewM
 
     @Override
     public UserViewModel provideViewModel() {
-        return new UserViewModel();
+        return ViewModelProviders.of(this).get(UserViewModel.class);
     }
 
 }
+
+// android google github sample architecture

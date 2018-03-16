@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
     <data>
         <variable name="user" type="com.nca.testandroid.hw9.User"/>
     </data>
@@ -33,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerInside"
-            app:imageUrl="@{user.imageUrl}"/>
+            bind:imageUrl="@{user.imageUrl}"/>
     </LinearLayout>
 </layout>
 

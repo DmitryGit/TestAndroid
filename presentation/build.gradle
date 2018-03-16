@@ -64,6 +64,9 @@ dependencies {
 
     annotationProcessor dependency.androidBuildingCompiler
 
+    implementation dependency.archComponentsExtension
+    annotationProcessor dependency.archComponentsCompiler
+
     api project(path: ':data')
 
 //************************************ старая часть *********************

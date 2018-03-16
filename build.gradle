@@ -25,6 +25,9 @@ ext {
     gsonVersion = "2.8.2"
     androidBuildingCompiler = '3.0.0'
 
+    archComponentVersion = '1.0.0'
+
+
 
        dependencies = [
         supportAppcompat:  "com.android.support:appcompat-v7:$buildToolsSdkVersion",
@@ -32,6 +35,9 @@ ext {
         supportDesign: "com.android.support:design:$buildToolsSdkVersion",
 
         androidBuildingCompiler: "com.android.databinding:compiler:$androidBuildingCompiler",
+
+        archComponentsExtension: "android.arch.lifecycle:extensions:$archComponentVersion",
+        archComponentsCompiler: "android.arch.lifecycle:compiler:$archComponentVersion",
 
         rx2android: "io.reactivex.rxjava2:rxandroid:$rxandroidVersion",
         rx2java: "io.reactivex.rxjava2:rxjava:$rxjavaVersion",
