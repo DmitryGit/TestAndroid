@@ -26,6 +26,10 @@ dependencies {
 
     implementation dependency.gson
 
+    implementation dependency.javaxInject
+
+    api dependency.retrofit
+
     api project(path: ':domain')
 
 ////    implementation 'com.android.support:appcompat-v7:26.1.0'

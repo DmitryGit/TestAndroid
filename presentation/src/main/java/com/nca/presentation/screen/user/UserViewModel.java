@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.util.Log;
 import android.widget.ImageView;
 
+import com.nca.app.App;
 import com.nca.data.repository.UserRepositoryImpl;
 import com.nca.domain.entity.UserEntity;
 import com.nca.domain.interactors.GetUserByIdUseCase;
@@ -16,6 +17,8 @@ import com.nca.presentation.base.BaseViewModel;
 import com.nca.testandroid.utils.MyAppGlideModule;
 
 import java.util.ArrayList;
+
+import javax.inject.Inject;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
@@ -28,7 +31,14 @@ import io.reactivex.schedulers.Schedulers;
 
 public class UserViewModel extends BaseViewModel {
 
-    GetUserByIdUseCase getUserByIdUseCase = new GetUserByIdUseCase(new UIThread(), new UserRepositoryImpl());
+    @Override
+    public void createInject() {
+        App.getAppComponent().inject(this);
+    }
+
+    @Inject
+    public GetUserByIdUseCase getUserByIdUseCase;
+//    GetUserByIdUseCase getUserByIdUseCase = new GetUserByIdUseCase(new UIThread(), new UserRepositoryImpl());
 
     public ObservableInt background = new ObservableInt(Color.WHITE);
 

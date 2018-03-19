@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.util.Log;
 import android.widget.ImageView;
 
+import com.nca.app.App;
 import com.nca.domain.entity.UserEntity;
 import com.nca.domain.interactors.GetUserByIdUseCase;
 import com.nca.executor.UIThread;
@@ -27,7 +28,13 @@ import io.reactivex.schedulers.Schedulers;
 
 public class UserViewModelForHome9 extends BaseViewModel {
 
-    GetUserByIdUseCase getUserByIdUseCase = new GetUserByIdUseCase(new UIThread());
+//    GetUserByIdUseCase getUserByIdUseCase = new GetUserByIdUseCase(new UIThread());
+
+    @Override
+    public void createInject() {
+        App.getAppComponent().inject(this);
+    }
+
 
     public ObservableInt background = new ObservableInt(Color.WHITE);
 

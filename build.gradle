@@ -24,6 +24,9 @@ ext {
     rxandroidVersion = "2.0.2"
     gsonVersion = "2.8.2"
     androidBuildingCompiler = '3.0.0'
+    daggerVersion = "2.15"
+    javaInjectVersion = "1"
+    retrofitVersion = "2.4.0"
 
     archComponentVersion = '1.0.0'
 
@@ -41,6 +44,14 @@ ext {
 
         rx2android: "io.reactivex.rxjava2:rxandroid:$rxandroidVersion",
         rx2java: "io.reactivex.rxjava2:rxjava:$rxjavaVersion",
+
+        dagger: "com.google.dagger:dagger:$daggerVersion",
+        daggerCompiler: "com.google.dagger:dagger-compiler:$daggerVersion",
+
+        javaxInject: "javax.inject:javax.inject:$javaInjectVersion",
+
+       retrofit: "com.squareup.retrofit2:retrofit:$retrofitVersion",
+
 
         gson: "com.google.code.gson:gson:$gsonVersion"
 

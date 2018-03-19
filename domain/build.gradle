@@ -26,4 +26,6 @@ dependencies {
 
         api dependency.rx2java
 
+    implementation dependency.javaxInject
+
 }

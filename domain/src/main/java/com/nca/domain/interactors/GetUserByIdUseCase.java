@@ -8,6 +8,9 @@ import com.nca.domain.executor.ThreadExecutor;
 import com.nca.domain.repository.UserRepository;
 
 
+import javax.inject.Inject;
+import javax.inject.Named;
+
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
@@ -17,8 +20,9 @@ public class GetUserByIdUseCase extends BaseUseCase {
 
     private UserRepository userRepository;
 
+    @Inject
     public GetUserByIdUseCase(PostExecutionThread postExecutionThread,
-                              UserRepository userRepository) {
+                              @Named("rep1") UserRepository userRepository) {
         super(postExecutionThread);
         this.userRepository = userRepository;
     }

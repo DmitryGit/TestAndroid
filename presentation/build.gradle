@@ -67,6 +67,9 @@ dependencies {
     implementation dependency.archComponentsExtension
     annotationProcessor dependency.archComponentsCompiler
 
+    implementation dependency.dagger
+    annotationProcessor dependency.daggerCompiler
+
     api project(path: ':data')
 
 //************************************ старая часть *********************
