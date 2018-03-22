@@ -13,6 +13,6 @@ public interface RestApi {
     @GET("data/User")
     Observable<List<User>> loadUsers();
 
-    @GET("data/User/{id}")
-    Observable<User> loadUserById(@Path("id") String id);
+    @GET("data/User/{objectId}")
+    Observable<User> loadUserById(@Path("objectId") String id);
 }

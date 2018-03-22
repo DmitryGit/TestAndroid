@@ -8,6 +8,8 @@ import com.nca.domain.executor.ThreadExecutor;
 import com.nca.domain.repository.UserRepository;
 
 
+import java.util.List;
+
 import javax.inject.Inject;
 import javax.inject.Named;
 
@@ -29,6 +31,12 @@ public class GetUserByIdUseCase extends BaseUseCase {
 
     public Observable<UserEntity> get(String id) {
                 return userRepository.get(id)
+                .subscribeOn(threadExecution)
+                .observeOn(postExecutionThread);
+    }
+
+    public Observable<List<UserEntity>> get() {
+                return userRepository.get()
                 .subscribeOn(threadExecution)
                 .observeOn(postExecutionThread);
     }

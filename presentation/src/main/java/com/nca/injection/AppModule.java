@@ -12,12 +12,15 @@ import com.nca.domain.repository.UserRepository;
 import com.nca.executor.UIThread;
 import com.nca.testandroid.BuildConfig;
 
+import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
 import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 @Module
 public class AppModule {
@@ -29,6 +32,12 @@ public class AppModule {
         this.context = context;
     }
 
+
+    @Provides
+    @Singleton
+    public RestService getRestService() {
+        return new RestService(getRestApi(getRetrofit(getGson())));
+    }
 
     @Provides
     @Singleton
@@ -49,7 +58,7 @@ public class AppModule {
     @Singleton
     @Named("rep1")
     public UserRepository getUserRepository(Context context) {
-        return new UserRepositoryImpl(context, restService);
+        return new UserRepositoryImpl(context, getRestService());
     }
 
     @Provides
@@ -66,7 +75,11 @@ public class AppModule {
                 .Builder()
 //                .addCallAdapterFactory( /*Rx in Gson*/)
 //                .addConverterFactory()
-                .baseUrl(BuildConfig.APPLICATION_ID).build();
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                .addConverterFactory(GsonConverterFactory.create(gson))
+                .baseUrl("https://api.backendless.com/FD247E47-9C63-BE0D-FF02-EE6FC26EE800/57954579-3843-763B-FF76-3458E1999F00/")
+                .build();
+//                .baseUrl(BuildConfig.APPLICATION_ID).build();
 
         // в градле
         // https://api.backendless.com/FD247E47-9C63-BE0D-FF02-EE6FC26EE800/57954579-3843-763B-FF76-3458E1999F00

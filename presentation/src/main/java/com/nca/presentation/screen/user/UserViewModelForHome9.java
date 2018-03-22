@@ -32,7 +32,7 @@ public class UserViewModelForHome9 extends BaseViewModel {
 
     @Override
     public void createInject() {
-        App.getAppComponent().inject(this);
+//        App.getAppComponent().inject(this);
     }
 
 

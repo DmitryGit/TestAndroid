@@ -50,8 +50,9 @@ ext {
 
         javaxInject: "javax.inject:javax.inject:$javaInjectVersion",
 
-       retrofit: "com.squareup.retrofit2:retrofit:$retrofitVersion",
-
+        retrofit: "com.squareup.retrofit2:retrofit:$retrofitVersion",
+        retrofitGson: "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+        retrofitRx2java: "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
 
         gson: "com.google.code.gson:gson:$gsonVersion"
 

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="200"
+    android:orientation="vertical">
+    <!--флаги следующий стран: Австрия, Польша, Италия, Колумбия, Мадагаскар, Таиланд и Дании.-->
+    <!--Вам нужно задать такую разметку, чтобы указав background нужного цвета в элементе получился флаг нужной страны.-->
+    <!--Также необходимо использовать элемент ScrollView чтобы вместились все флаги по очереди сверху вниз.-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorRed"
+        android:minHeight="240dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_height="80dp"
+            android:background="@color/colorWhite"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorBlack"
+        android:minHeight="10dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorRed"
+        android:minHeight="240dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_height="120dp"
+            android:background="@color/colorWhite"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorBlack"
+        android:minHeight="10dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorRed"
+        android:minHeight="240dp">
+
+        <View
+            android:layout_gravity="start"
+            android:layout_width="0dp"
+            android:layout_height="240dp"
+            android:layout_weight="1"
+            android:background="@color/colorGreen"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="240dp"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="240dp"
+            android:layout_weight="1"
+            android:background="@color/colorRed"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorBlack"
+        android:minHeight="10dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorRed"
+        android:minHeight="240dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/colorYellow" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorBlue" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorBlack"
+        android:minHeight="10dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:minHeight="240dp"
+        android:weightSum="3"
+        android:background="@color/colorRed">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorWhite" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:background="@color/colorGreen">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/colorRed"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlack"
+        android:minHeight="10dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorRed"
+        android:minHeight="240dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_height="40dp"
+            android:background="@color/colorWhite"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/colorBlue" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlack"
+        android:minHeight="10dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorRed"
+        android:weightSum="300"
+        android:minHeight="240dp">
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_weight="120"
+            android:layout_marginStart="100dp"
+            android:background="@color/colorWhite">
+        </View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60"
+            android:background="@color/colorWhite" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_weight="120"
+            android:layout_marginStart="100dp"
+            android:background="@color/colorWhite">
+        </View>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
