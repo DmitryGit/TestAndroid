@@ -28,9 +28,13 @@ dependencies {
 
     implementation dependency.javaxInject
 
+    // "api" - позвоялет обращатся из presentation слоя
     api dependency.retrofit
     api dependency.retrofitGson
     api dependency.retrofitRx2java
+
+    api dependency.okHttp
+    api dependency.okHttpLogging
 
     api project(path: ':domain')
 

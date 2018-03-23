@@ -1,6 +1,7 @@
 package com.nca.injection;
 
 import android.content.Context;
+import android.os.Build;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -12,12 +13,16 @@ import com.nca.domain.repository.UserRepository;
 import com.nca.executor.UIThread;
 import com.nca.testandroid.BuildConfig;
 
+import java.util.concurrent.TimeUnit;
+
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
+import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -36,7 +41,7 @@ public class AppModule {
     @Provides
     @Singleton
     public RestService getRestService() {
-        return new RestService(getRestApi(getRetrofit(getGson())));
+        return new RestService(getRestApi(getRetrofit(getOkHttp(), getGson())));
     }
 
     @Provides
@@ -70,7 +75,7 @@ public class AppModule {
 
     @Provides
     @Singleton
-    public Retrofit getRetrofit(Gson gson) {
+    public Retrofit getRetrofit(OkHttpClient okHttpClient, Gson gson) {
         return new Retrofit
                 .Builder()
 //                .addCallAdapterFactory( /*Rx in Gson*/)
@@ -78,12 +83,34 @@ public class AppModule {
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .baseUrl("https://api.backendless.com/FD247E47-9C63-BE0D-FF02-EE6FC26EE800/57954579-3843-763B-FF76-3458E1999F00/")
+                .client(okHttpClient)
                 .build();
 //                .baseUrl(BuildConfig.APPLICATION_ID).build();
 
         // в градле
         // https://api.backendless.com/FD247E47-9C63-BE0D-FF02-EE6FC26EE800/57954579-3843-763B-FF76-3458E1999F00
         // gson подлючит на сайте retrofita
+    }
+
+    @Provides
+    @Singleton
+    public OkHttpClient getOkHttp() {
+
+        OkHttpClient.Builder builder = new OkHttpClient.Builder();
+
+        builder
+                .readTimeout(10, TimeUnit.SECONDS)
+                .writeTimeout(10, TimeUnit.SECONDS)
+                .connectTimeout(10, TimeUnit.SECONDS);
+
+        if (BuildConfig.DEBUG) {
+
+            HttpLoggingInterceptor httpLogging = new HttpLoggingInterceptor();
+            httpLogging.setLevel(HttpLoggingInterceptor.Level.BODY);
+            builder.addInterceptor(httpLogging);
+        }
+
+        return builder.build();
     }
 
     @Provides

@@ -27,6 +27,7 @@ ext {
     daggerVersion = "2.15"
     javaInjectVersion = "1"
     retrofitVersion = "2.4.0"
+    okHttpVersion = "3.10.0"
 
     archComponentVersion = '1.0.0'
 
@@ -53,6 +54,8 @@ ext {
         retrofit: "com.squareup.retrofit2:retrofit:$retrofitVersion",
         retrofitGson: "com.squareup.retrofit2:converter-gson:$retrofitVersion",
         retrofitRx2java: "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
+        okHttp: "com.squareup.okhttp3:okhttp:$okHttpVersion",
+        okHttpLogging: "com.squareup.okhttp3:logging-interceptor:$okHttpVersion",
 
         gson: "com.google.code.gson:gson:$gsonVersion"
 
