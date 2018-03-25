@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View"/>
+        <import type="java.lang.String"/>
+        <variable
+            name="viewModel"
+            type="com.nca.presentation.screen.hw11.UserViewModelHW11"/>
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя"
+        android:text="@{viewModel.firstName}"/>
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Фамилия"
+        android:text="@{viewModel.lastName}"/>
+
+    <EditText
+        android:id="@+id/fatherName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Отчество"
+        android:text="@{viewModel.fatherName}"/>
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Возраст"
+        android:text="@{viewModel.age}"/>
+
+    <EditText
+        android:id="@+id/imageUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL картинки"
+        android:text="@{viewModel.imageUrl}"/>
+
+    <Switch
+        android:id="@+id/sex_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="@{viewModel.isMan? `Мужик`:`Женщина`}"
+        android:textOff="Женщина"
+        android:textOn="Мужчина" />
+
+    <Button
+        android:id="@+id/button_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        android:text="Обновить" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="Сохранить" />
+
+</LinearLayout>
+</layout>
