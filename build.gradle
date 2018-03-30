@@ -28,7 +28,6 @@ ext {
     javaInjectVersion = "1"
     retrofitVersion = "2.4.0"
     okHttpVersion = "3.10.0"
-
     archComponentVersion = '1.0.0'
 
 
@@ -42,6 +41,11 @@ ext {
 
         archComponentsExtension: "android.arch.lifecycle:extensions:$archComponentVersion",
         archComponentsCompiler: "android.arch.lifecycle:compiler:$archComponentVersion",
+
+        room : "android.arch.persistence.room:runtime:$archComponentVersion",
+        roomCompiler : "android.arch.persistence.room:compiler:$archComponentVersion",
+
+        roomCompilerRx : "android.arch.persistence.room:rxjava2:$archComponentVersion",
 
         rx2android: "io.reactivex.rxjava2:rxandroid:$rxandroidVersion",
         rx2java: "io.reactivex.rxjava2:rxjava:$rxjavaVersion",

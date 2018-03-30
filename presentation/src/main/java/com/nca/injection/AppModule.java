@@ -1,10 +1,11 @@
 package com.nca.injection;
 
+import android.arch.persistence.room.Room;
 import android.content.Context;
-import android.os.Build;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.nca.data.db.AppDatabase;
 import com.nca.data.net.RestApi;
 import com.nca.data.net.RestService;
 import com.nca.data.repository.UserRepositoryImpl;
@@ -15,7 +16,6 @@ import com.nca.testandroid.BuildConfig;
 
 import java.util.concurrent.TimeUnit;
 
-import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Singleton;
 
@@ -37,6 +37,15 @@ public class AppModule {
         this.context = context;
     }
 
+
+    @Provides
+    @Singleton
+    public AppDatabase getAppDatabase(Context context) {
+        AppDatabase appDatabase = Room.databaseBuilder(context,
+                AppDatabase.class, "database").fallbackToDestructiveMigration().build();
+
+        return appDatabase;
+    }
 
     @Provides
     @Singleton
@@ -63,14 +72,14 @@ public class AppModule {
     @Singleton
     @Named("rep1")
     public UserRepository getUserRepository(Context context) {
-        return new UserRepositoryImpl(context, getRestService());
+        return new UserRepositoryImpl(context, getRestService(), getAppDatabase(context) );
     }
 
     @Provides
     @Singleton
     @Named("rep2")
     public UserRepository getUserRepository2(Context context) {
-        return new UserRepositoryImpl(context, restService);
+        return new UserRepositoryImpl(context, restService, getAppDatabase(context));
     }
 
     @Provides

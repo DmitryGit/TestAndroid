@@ -1,11 +1,20 @@
 package com.nca.data.entity;
 
 
+import android.arch.persistence.room.ColumnInfo;
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+import android.support.annotation.NonNull;
+
 import com.google.gson.annotations.SerializedName;
 
+@Entity(tableName = "User")
 public class User {
 
+    @PrimaryKey
+    @ColumnInfo(name = "id")
     @SerializedName("objectId")
+    @NonNull
     private String objectId;
 
     @SerializedName("username")

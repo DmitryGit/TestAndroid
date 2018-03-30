@@ -36,6 +36,11 @@ dependencies {
     api dependency.okHttp
     api dependency.okHttpLogging
 
+    api dependency.room
+    annotationProcessor dependency.roomCompiler
+    api dependency.roomCompilerRx
+
+
     api project(path: ':domain')
 
 ////    implementation 'com.android.support:appcompat-v7:26.1.0'

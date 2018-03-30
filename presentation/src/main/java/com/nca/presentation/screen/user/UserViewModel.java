@@ -66,37 +66,38 @@ public class UserViewModel extends BaseViewModel {
 //            users.add(new UserEntity("Варвара", "Краса", "длинная коса", 18, false, "http://tv.akado.ru/images/data/akadotv/picture/imgbig/468702/1.jpg"));
 //            users.add(new UserEntity("Словей", "Разбойник", "бандит", 100, true, "http://www.bestiary.us/files/images/solovey-by-orlova.250x250.jpg"));
 
-        getUserByIdUseCase.get("F2DEB8C5-C0FE-30C1-FF5E-F52C286FFF00").subscribe(new Observer<UserEntity>() {
-                @Override
-                public void onSubscribe(Disposable d) {
-                    Log.e("AAA", "onSubscribe");
-                    compositeDisposable.add(d);
-                }
-
-            @Override
-            public void onNext(UserEntity userEntity) {
-                Log.e("AAA", "onNext");
-                firstName.set(userEntity.getFirstName());
-                lastName.set(userEntity.getLastName());
-                fatherName.set(userEntity.getFatherName());
-                age.set(userEntity.getAge());
-//                isMan.set(userEntity.get(3).isMan());
+//        getUserByIdUseCase.get("F2DEB8C5-C0FE-30C1-FF5E-F52C286FFF00").subscribe(new Observer<UserEntity>() {
+//                @Override
+//                public void onSubscribe(Disposable d) {
+//                    Log.e("AAA", "onSubscribe");
+//                    compositeDisposable.add(d);
+//                }
+//
+//            @Override
+//            public void onNext(UserEntity userEntity) {
+//                Log.e("AAA", "onNext");
+//                firstName.set(userEntity.getFirstName());
+//                lastName.set(userEntity.getLastName());
+//                fatherName.set(userEntity.getFatherName());
+//                age.set(userEntity.getAge());
+////                isMan.set(userEntity.get(3).isMan());
+////                imageUrl.set(userEntity.getImageUrl());
 //                imageUrl.set(userEntity.getImageUrl());
-                imageUrl.set(userEntity.getImageUrl());
-            }
+//            }
+//
+//                    @Override
+//                    public void onError(Throwable e) {
+//                        Log.e("AAA", "onError");
+//                    }
+//
+//                    @Override
+//                    public void onComplete() {
+//                        Log.e("AAA", "onComplete");
+//                        progressVisible.set(false);
+//                    }
+//
+//    });
 
-                    @Override
-                    public void onError(Throwable e) {
-                        Log.e("AAA", "onError");
-                    }
-
-                    @Override
-                    public void onComplete() {
-                        Log.e("AAA", "onComplete");
-                        progressVisible.set(false);
-                    }
-
-    });
 //        getUserByIdUseCase.get().subscribe(new Observer<List<UserEntity>>() {
 //                @Override
 //                public void onSubscribe(Disposable d) {
@@ -128,6 +129,38 @@ public class UserViewModel extends BaseViewModel {
 //                    }
 //
 //        });
+
+        getUserByIdUseCase.getRoom().subscribe(new Observer<List<UserEntity>>() {
+            @Override
+            public void onSubscribe(Disposable d) {
+                Log.e("AAA", "onSubscribe");
+                compositeDisposable.add(d);
+            }
+
+            @Override
+            public void onNext(List<UserEntity> userEntity) {
+                Log.e("AAA", "onNext");
+                firstName.set(userEntity.get(0).getFirstName());
+                lastName.set(userEntity.get(0).getLastName());
+                fatherName.set(userEntity.get(0).getFatherName());
+                age.set(userEntity.get(0).getAge());
+//                isMan.set(userEntity.get(3).isMan());
+//                imageUrl.set(userEntity.getImageUrl());
+                imageUrl.set(userEntity.get(0).getImageUrl());
+            }
+
+            @Override
+            public void onError(Throwable e) {
+                Log.e("AAA", "onError");
+            }
+
+            @Override
+            public void onComplete() {
+                Log.e("AAA", "onComplete");
+                progressVisible.set(false);
+            }
+
+        });
 
     }
 

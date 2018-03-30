@@ -11,6 +11,7 @@ public interface UserRepository {
 
     Observable<UserEntity> get(String id);
     Observable<List<UserEntity>> get();
+    Observable<List<UserEntity>> getRoom();
     Completable save();
     Completable remove();
 

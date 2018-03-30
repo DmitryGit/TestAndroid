@@ -40,6 +40,11 @@ public class GetUserByIdUseCase extends BaseUseCase {
                 .subscribeOn(threadExecution)
                 .observeOn(postExecutionThread);
     }
+    public Observable<List<UserEntity>> getRoom() {
+                return userRepository.get()
+                .subscribeOn(threadExecution)
+                .observeOn(postExecutionThread);
+    }
 
 //        return Observable.create(new ObservableOnSubscribe<UserEntity>() {
 //        @Override
