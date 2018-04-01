@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 
+import com.nca.domain.entity.UserEntityHW11;
 import com.nca.testandroid.BR;
 
 public abstract class BaseMvvActivity<Binding extends ViewDataBinding, ViewModel extends BaseViewModel> extends AppCompatActivity {

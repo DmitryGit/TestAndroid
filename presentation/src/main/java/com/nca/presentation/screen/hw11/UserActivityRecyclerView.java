@@ -10,7 +10,7 @@ public class UserActivityRecyclerView extends BaseMvvActivity<ActivityUserBindin
 
     @Override
     public int provideLayoutId() {
-        return R.layout.activity_hw11_user_edit;
+        return R.layout.activity_hw11_recycler_view;
     }
 
     @Override

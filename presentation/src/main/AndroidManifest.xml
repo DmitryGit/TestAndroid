@@ -64,6 +64,11 @@
         </activity>
 
         <!--<activity-->
+            <!--android:name="com.nca.presentation.screen.hw11.UserActivityRecyclerView"-->
+            <!--android:parentActivityName=".hw2.HomeworkMain">-->
+        <!--</activity>-->
+
+        <!--<activity-->
             <!--android:name=".hw6.Homework6Activity"-->
             <!--android:parentActivityName=".hw2.HomeworkMain">-->
         <!--</activity>-->
@@ -79,7 +84,9 @@
             <!--</intent-filter>-->
         <!--</activity>-->
 
-        <activity android:name="com.nca.presentation.screen.user.UserActivity">
+        <!--<activity android:name="com.nca.presentation.screen.hw11.UserActivityRecyclerView">-->
+        <activity android:name="com.nca.presentation.screen.hw11.UserActivityEdit">
+        <!--<activity android:name="com.nca.presentation.screen.user.UserActivity">-->
             <!--android:screenOrientation="portrait">-->
             <!--android:noHistory="true">-->
             <intent-filter>

@@ -1,5 +1,7 @@
 package com.nca.data.net;
 
+import android.util.Log;
+
 import com.nca.data.entity.User;
 
 import java.util.List;
@@ -7,6 +9,7 @@ import java.util.List;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
+import io.reactivex.Completable;
 import io.reactivex.Observable;
 
 @Singleton
@@ -27,5 +30,10 @@ public class RestService {
 //    @Override
     public Observable<User> loadUserById(String id) {
         return restApi.loadUserById(id);
+    }
+
+    public Completable saveUserById(String id, User user) {
+        Log.e("AAA", "onPreSave");
+        return restApi.saveUserById(id, user);
     }
 }

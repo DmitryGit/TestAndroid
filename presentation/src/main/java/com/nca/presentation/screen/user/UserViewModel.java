@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import com.nca.app.App;
 import com.nca.data.repository.UserRepositoryImpl;
 import com.nca.domain.entity.UserEntity;
+import com.nca.domain.entity.UserEntityHW11;
 import com.nca.domain.interactors.GetUserByIdUseCase;
 import com.nca.executor.UIThread;
 import com.nca.presentation.base.BaseViewModel;
@@ -163,5 +164,37 @@ public class UserViewModel extends BaseViewModel {
         });
 
     }
+
+//            getUserByIdUseCase.get("F2DEB8C5-C0FE-30C1-FF5E-F52C286FFF00").subscribe(new Observer<UserEntity>() {
+//        @Override
+//        public void onSubscribe(Disposable d) {
+//            Log.e("AAA", "onSubscribe");
+//            compositeDisposable.add(d);
+//        }
+//
+//        @Override
+//        public void onNext(UserEntity userEntity) {
+//            Log.e("AAA", "onNext");
+//            firstName.set(userEntity.getFirstName());
+//            lastName.set(userEntity.getLastName());
+//            fatherName.set(userEntity.getFatherName());
+//            age.set(userEntity.getAge());
+////                isMan.set(userEntity.get(3).isMan());
+////                imageUrl.set(userEntity.getImageUrl());
+//            imageUrl.set(userEntity.getImageUrl());
+//        }
+//
+//        @Override
+//        public void onError(Throwable e) {
+//            Log.e("AAA", "onError");
+//        }
+//
+//        @Override
+//        public void onComplete() {
+//            Log.e("AAA", "onComplete");
+//            progressVisible.set(false);
+//        }
+//
+//    });
 
 }

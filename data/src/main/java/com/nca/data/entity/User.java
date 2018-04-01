@@ -26,50 +26,50 @@ public class User {
     @SerializedName("age")
     private int age;
 
-    @SerializedName("firstname")
-    private String firstName;
+//    @SerializedName("firstname")
+//    private String firstName;
+//
+//    @SerializedName("lastname")
+//    private String lastName;
+//
+//    @SerializedName("fathername")
+//    private String fatherName;
+//
+//    @SerializedName("isMan")
+//    private boolean isMan;
 
-    @SerializedName("lastname")
-    private String lastName;
 
-    @SerializedName("fathername")
-    private String fatherName;
-
-    @SerializedName("isMan")
-    private boolean isMan;
-
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getFatherName() {
-        return fatherName;
-    }
-
-    public void setFatherName(String fatherName) {
-        this.fatherName = fatherName;
-    }
-
-    public boolean isMan() {
-        return isMan;
-    }
-
-    public void setMan(boolean man) {
-        isMan = man;
-    }
+//    public String getFirstName() {
+//        return firstName;
+//    }
+//
+//    public void setFirstName(String firstName) {
+//        this.firstName = firstName;
+//    }
+//
+//    public String getLastName() {
+//        return lastName;
+//    }
+//
+//    public void setLastName(String lastName) {
+//        this.lastName = lastName;
+//    }
+//
+//    public String getFatherName() {
+//        return fatherName;
+//    }
+//
+//    public void setFatherName(String fatherName) {
+//        this.fatherName = fatherName;
+//    }
+//
+//    public boolean isMan() {
+//        return isMan;
+//    }
+//
+//    public void setMan(boolean man) {
+//        isMan = man;
+//    }
 
     public String getObjectId() {
         return objectId;

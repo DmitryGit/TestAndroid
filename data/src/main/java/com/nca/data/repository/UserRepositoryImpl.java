@@ -7,6 +7,7 @@ import com.nca.data.db.UserDao;
 import com.nca.data.entity.User;
 import com.nca.data.net.RestService;
 import com.nca.domain.entity.UserEntity;
+import com.nca.domain.entity.UserEntityHW11;
 import com.nca.domain.repository.UserRepository;
 
 import java.util.ArrayList;
@@ -57,29 +58,29 @@ public class UserRepositoryImpl implements UserRepository {
 //    }
 
     @Override
-    public Observable<UserEntity> get(String id) {
+    public Observable<UserEntityHW11> get(String id) {
         return restService
                 .loadUserById(id)
-                .map(new Function<User, UserEntity>() {
+                .map(new Function<User, UserEntityHW11>() {
                     @Override
-                    public UserEntity apply(User user) throws Exception {
-                        return new UserEntity(user.getUsername(), user.getUsername(), user.getUsername(), user.getAge(), true,  user.getProfileUrl());
+                    public UserEntityHW11 apply(User user) throws Exception {
+                        return new UserEntityHW11(user.getUsername(), user.getAge(), user.getProfileUrl(), user.getObjectId());
                     }
                 });
 
     }
 
     @Override
-    public Observable<List<UserEntity>> get() {
+    public Observable<List<UserEntityHW11>> get() {
         return restService
                 .loadUsers()
-                .map(new Function<List<User>, List<UserEntity>>() {
+                .map(new Function<List<User>, List<UserEntityHW11>>() {
                     @Override
-                    public List<UserEntity> apply(List<User> users) throws Exception {
-                        List<UserEntity> userEntities = new ArrayList<>();
+                    public List<UserEntityHW11> apply(List<User> users) throws Exception {
+                        List<UserEntityHW11> userEntities = new ArrayList<>();
 
                         for (User user: users) {
-                            userEntities.add(new UserEntity(user.getUsername(), user.getUsername(), user.getUsername(), user.getAge(), true,  user.getProfileUrl()));
+                            userEntities.add(new UserEntityHW11(user.getUsername(), user.getAge(), user.getProfileUrl(), user.getObjectId()));
                         }
                         return userEntities;
                     }
@@ -87,8 +88,16 @@ public class UserRepositoryImpl implements UserRepository {
     }
 
     @Override
-    public Completable save() {
-        return null;
+    public Completable save(String id, UserEntityHW11 userEntity) {
+
+        User user = new User();
+        user.setAge(userEntity.getAge());
+        user.setProfileUrl(userEntity.getProfileUrl());
+        user.setUsername(userEntity.getUsername());
+        user.setObjectId(userEntity.getId());
+        return restService.saveUserById(id, user);
+
+//        return null;
     }
 
     @Override

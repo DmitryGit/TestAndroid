@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.nca.domain.entity.UserEntity;
+import com.nca.domain.entity.UserEntityHW11;
 import com.nca.testandroid.R;
 import com.nca.testandroid.hw6.People;
 
@@ -17,8 +19,8 @@ import java.util.Locale;
 
 public class UserEntityAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
-    private List<People> itemList = new ArrayList<>();
-    private List<People> itemOriginalList = new ArrayList<>();
+    private List<UserEntityHW11> itemList = new ArrayList<>();
+//    private List<UserEntity> itemOriginalList = new ArrayList<>();
 //    private List<People> itemListFiltred = new ArrayList<>();
     private OnUserClickListener listener;
 
@@ -27,12 +29,12 @@ public class UserEntityAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 
     }
 
-    public void setPeopleList(List<People> itemList) {
+    public void setUserEntityList(List<UserEntityHW11> itemList) {
         this.itemList.clear();
         this.itemList.addAll(itemList);
-        if (itemOriginalList.size() == 0) {
-            itemOriginalList.addAll(itemList);
-        }
+//        if (itemOriginalList.size() == 0) {
+//            itemOriginalList.addAll(itemList);
+//        }
         // метод заставлят перерисовать элементы
         notifyDataSetChanged();
     }
@@ -55,7 +57,7 @@ public class UserEntityAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_user, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_user_hw11, parent, false);
         return new Holder(view);
     }
 
@@ -64,13 +66,13 @@ public class UserEntityAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
     public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
 
         Holder myHolder = (Holder)holder;
-        final People people = itemList.get(position);
+        final UserEntityHW11 userEntity = itemList.get(position);
 
         myHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(listener != null) {
-                    listener.onClick(people, position);
+                    listener.onClick(userEntity, position);
                 }
             }
         });
@@ -82,9 +84,9 @@ public class UserEntityAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 //            myHolder.imageView.setImageResource(R.drawable.sova_anmation_3);
 //        }
 
-        myHolder.nameTextView.setText(people.getName());
-        myHolder.surnameTextView.setText(people.getSurname());
-        myHolder.ageTextView.setText(people.getAge().toString());
+        myHolder.nameTextView.setText(userEntity.getUsername());
+        myHolder.ageTextView.setText(userEntity.getAge().toString());
+        myHolder.urlTextView.setText(userEntity.getProfileUrl());
     }
 
     // возвращет размер
@@ -96,18 +98,18 @@ public class UserEntityAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
     // технический клас для хранаения item и ссылок на элменты
     private static class Holder extends RecyclerView.ViewHolder {
 
-        ImageView imageView;
+//        ImageView imageView;
         TextView nameTextView;
-        TextView surnameTextView;
         TextView ageTextView;
+        TextView urlTextView;
 
         public Holder(View itemView) {
             super(itemView);
             Log.e("UserEntityAdapter", "Holder");
-            imageView = itemView.findViewById(R.id.imageView);
+//            imageView = itemView.findViewById(R.id.imageView);
             nameTextView = itemView.findViewById(R.id.nameTextView);
-            surnameTextView = itemView.findViewById(R.id.surnameTextView);
             ageTextView = itemView.findViewById(R.id.ageTextView);
+            urlTextView = itemView.findViewById(R.id.urlTextView);
 //            itemView.setOnClickListener(new View.OnClickListener() {
 //                @Override
 //                public void onClick(View v) {
@@ -117,6 +119,6 @@ public class UserEntityAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         }
     }
     interface OnUserClickListener {
-         void onClick(People people, int position);
+         void onClick(UserEntityHW11 userEntity, int position);
     }
 }

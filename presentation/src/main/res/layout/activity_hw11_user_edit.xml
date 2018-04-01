@@ -6,7 +6,10 @@
         <import type="java.lang.String"/>
         <variable
             name="viewModel"
-            type="com.nca.presentation.screen.hw11.UserViewModelHW11"/>
+            type="com.nca.presentation.screen.hw11.UserViewModelHW11e"/>
+        <!--<variable-->
+            <!--name="userEntity"-->
+            <!--type="com.nca.domain.entity.UserEntityHW11"/>-->
     </data>
 
 <LinearLayout
@@ -16,49 +19,42 @@
     android:weightSum="5">
 
     <EditText
-        android:id="@+id/firstName"
+        android:id="@+id/userId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{viewModel.id}"
+        android:visibility="visible"/>
+
+    <EditText
+        android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Имя"
-        android:text="@{viewModel.firstName}"/>
-
-    <EditText
-        android:id="@+id/lastName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Фамилия"
-        android:text="@{viewModel.lastName}"/>
-
-    <EditText
-        android:id="@+id/fatherName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Отчество"
-        android:text="@{viewModel.fatherName}"/>
+        android:text="@{viewModel.username}"/>
 
     <EditText
         android:id="@+id/age"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Возраст"
-        android:text="@{viewModel.age}"/>
+        android:text="@{String.valueOf(viewModel.age)}"/>
 
     <EditText
-        android:id="@+id/imageUrl"
+        android:id="@+id/profileUrl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="URL картинки"
-        android:text="@{viewModel.imageUrl}"/>
+        android:text="@{viewModel.profileUrl}"/>
 
-    <Switch
-        android:id="@+id/sex_switch"
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:layout_weight="1"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:text="@{viewModel.isMan? `Мужик`:`Женщина`}"
-        android:textOff="Женщина"
-        android:textOn="Мужчина" />
+    <!--<Switch-->
+        <!--android:id="@+id/sex_switch"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_gravity="center_vertical|center_horizontal"-->
+        <!--android:text="@{viewModel.isMan? `Мужик`:`Женщина`}"-->
+        <!--android:textOff="Женщина"-->
+        <!--android:textOn="Мужчина" />-->
 
     <Button
         android:id="@+id/button_edit"
@@ -69,13 +65,13 @@
         android:onClick="onClick"
         android:text="Обновить" />
 
-    <Button
-        android:id="@+id/button_save"
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:layout_weight="1"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:text="Сохранить" />
+    <!--<Button-->
+        <!--android:id="@+id/button_save"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_gravity="center_vertical|center_horizontal"-->
+        <!--android:text="Сохранить" />-->
 
 </LinearLayout>
 </layout>
