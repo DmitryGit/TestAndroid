@@ -7,6 +7,7 @@ import com.nca.domain.interactors.GetUserByIdUseCase;
 import com.nca.presentation.screen.hw11.UserViewModelHW11;
 import com.nca.presentation.screen.hw11.UserViewModelHW11e;
 import com.nca.presentation.screen.user.UserViewModel;
+import com.nca.presentation.screen.user.UserViewModelCW14;
 import com.nca.presentation.screen.user.UserViewModelForHome9;
 
 import javax.inject.Singleton;
@@ -20,6 +21,7 @@ public interface AppComponent {
     public void inject(UserViewModel userViewModel);
     public void inject(UserViewModelHW11 userViewModel);
     public void inject(UserViewModelHW11e userViewModel);
+    public void inject(UserViewModelCW14 userViewModel);
 //    public void inject(GetUserByIdUseCase getUserByIdUseCase);
 //    public void inject(UserRepositoryImpl userRepository);
 

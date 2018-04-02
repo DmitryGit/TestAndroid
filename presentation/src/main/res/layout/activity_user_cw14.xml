@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View"/>
+        <import type="java.lang.String"/>
+        <variable
+            name="viewModel"
+            type="com.nca.presentation.screen.user.UserViewModelCW14"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@{viewModel.background}"
+        android:orientation="vertical">
+
+        <!--<TextView android:layout_width="wrap_content"-->
+            <!--android:id="@+id/firstName"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@{viewModel.firstName ?? `-&#45;&#45;`}"/>-->
+
+        <!--<TextView android:layout_width="wrap_content"-->
+            <!--android:id="@+id/lastName"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@{viewModel.lastName ?? `-&#45;&#45;`}"/>-->
+
+        <!--<TextView android:layout_width="wrap_content"-->
+            <!--android:id="@+id/fatherName"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@{viewModel.fatherName ?? `-&#45;&#45;`}"/>-->
+
+        <!--<TextView android:layout_width="wrap_content"-->
+            <!--android:id="@+id/age"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@{`Возраст: ` + String.valueOf(viewModel.age)}"/>-->
+
+        <!--<TextView android:layout_width="wrap_content"-->
+            <!--android:id="@+id/isMan"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@{`Пол: ` + (viewModel.isMan? `Мужик`:`Женщина`)}"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageUrl"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:scaleType="centerInside"-->
+            <!--bind:imageUrl="@{viewModel.imageUrl}"/>-->
+
+        <!--<ProgressBar-->
+            <!--android:id="@+id/progressBar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:visibility="visible"/>-->
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/recyclerView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+</android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</layout>

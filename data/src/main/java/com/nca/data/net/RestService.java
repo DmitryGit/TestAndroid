@@ -24,7 +24,9 @@ public class RestService {
 
 //    @Override
     public Observable<List<User>> loadUsers() {
-        return restApi.loadUsers();
+        return restApi
+                .loadUsers();
+//                .compose();
     }
 
 //    @Override
@@ -34,6 +36,7 @@ public class RestService {
 
     public Completable saveUserById(String id, User user) {
         Log.e("AAA", "onPreSave");
+//        Log.e("User", user.toString());
         return restApi.saveUserById(id, user);
     }
 }
