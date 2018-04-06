@@ -6,6 +6,7 @@ import android.content.Context;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.nca.data.db.AppDatabase;
+import com.nca.data.net.ErrorTransformers;
 import com.nca.data.net.RestApi;
 import com.nca.data.net.RestService;
 import com.nca.data.repository.UserRepositoryImpl;
@@ -32,9 +33,22 @@ public class AppModule {
 
     Context context;
     RestService restService;
+    ErrorTransformers errorTransformers;
+
 
     public AppModule(Context context) {
         this.context = context;
+    }
+
+
+    //доделать самому появилась необходимость после появления ошибок
+    @Provides
+    @Singleton
+    public ErrorTransformers getErrorTransformers(Context context) {
+//        AppDatabase appDatabase = Room.databaseBuilder(context,
+//                AppDatabase.class, "database").fallbackToDestructiveMigration().build();
+
+        return errorTransformers;
     }
 
 
@@ -50,7 +64,7 @@ public class AppModule {
     @Provides
     @Singleton
     public RestService getRestService() {
-        return new RestService(getRestApi(getRetrofit(getOkHttp(), getGson())));
+        return new RestService(getRestApi(getRetrofit(getOkHttp(), getGson())), errorTransformers);
     }
 
     @Provides

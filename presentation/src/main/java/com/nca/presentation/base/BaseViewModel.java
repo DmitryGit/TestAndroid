@@ -1,12 +1,13 @@
 package com.nca.presentation.base;
 
 import android.arch.lifecycle.ViewModel;
+import android.support.annotation.Nullable;
 
 import com.nca.domain.entity.UserEntityHW11;
 
 import io.reactivex.disposables.CompositeDisposable;
 
-public abstract class BaseViewModel extends ViewModel {
+public abstract class BaseViewModel<R extends Router> extends ViewModel {
 
     public BaseViewModel() {
         super();
@@ -14,6 +15,19 @@ public abstract class BaseViewModel extends ViewModel {
     }
 
     public abstract void createInject();
+
+    @Nullable
+    protected R router;
+
+
+    public void attachRouter(R router) {
+        this.router = router;
+    }
+
+    public void detachRouter() {
+        router = null;
+    }
+
 
     protected CompositeDisposable compositeDisposable = new CompositeDisposable();
 

@@ -26,7 +26,8 @@ import io.reactivex.Observer;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 
-public class UserViewModelCW14 extends BaseViewModel {
+// меняли на уроке 06.04
+public class UserViewModelCW14 extends BaseViewModel<UserRouter> {
 
     @Override
     public void createInject() {
@@ -62,6 +63,7 @@ public class UserViewModelCW14 extends BaseViewModel {
 
         super();
 
+        if(router != null) router.navigateToUser("dsf");
         userAdapter.observeClick().subscribe(new Observer<BaseAdapter.ItemEntity>() {
             @Override
             public void onSubscribe(Disposable d) {

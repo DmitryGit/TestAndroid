@@ -10,13 +10,17 @@ import android.support.v7.app.AppCompatActivity;
 import com.nca.domain.entity.UserEntityHW11;
 import com.nca.testandroid.BR;
 
-public abstract class BaseMvvActivity<Binding extends ViewDataBinding, ViewModel extends BaseViewModel> extends AppCompatActivity {
+public abstract class BaseMvvActivity<Binding extends ViewDataBinding, ViewModel extends BaseViewModel, R extends Router> extends AppCompatActivity {
 
     protected Binding binding;
     protected ViewModel viewModel;
 
+    @Nullable
+    protected R router;
+
     public abstract int provideLayoutId();
     public abstract ViewModel provideViewModel();
+    public abstract R provideRouter();
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -25,6 +29,9 @@ public abstract class BaseMvvActivity<Binding extends ViewDataBinding, ViewModel
         viewModel = provideViewModel();
         binding = DataBindingUtil.setContentView(this, provideLayoutId());
         binding.setVariable(BR.viewModel, viewModel);
+
+        router = provideRouter();
+        viewModel.attachRouter(router);
     }
 
     @Override
@@ -47,5 +54,12 @@ public abstract class BaseMvvActivity<Binding extends ViewDataBinding, ViewModel
     protected void onStop() {
         super.onStop();
         viewModel.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        router = null;
+        viewModel.detachRouter();
     }
 }
