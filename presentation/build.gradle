@@ -60,6 +60,8 @@ dependencies {
     implementation dependency.supportV4
     implementation dependency.supportDesign
 
+    implementation dependency.constraintLayout
+
     implementation dependency.rx2android
 
     annotationProcessor dependency.androidBuildingCompiler
