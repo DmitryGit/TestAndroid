@@ -7,12 +7,13 @@ import android.support.v7.widget.LinearLayoutManager;
 
 import com.nca.domain.repository.UserRepository;
 import com.nca.presentation.base.BaseMvvActivity;
+import com.nca.presentation.base.BaseMvvActivityRouter;
 import com.nca.presentation.base.Router;
 import com.nca.testandroid.R;
 import com.nca.testandroid.databinding.ActivityUserBinding;
 import com.nca.testandroid.databinding.ActivityUserCw14Binding;
 
-public class UserActivityCW14 extends BaseMvvActivity<ActivityUserCw14Binding, UserViewModelCW14, UserRouter> {
+public class UserActivityCW14 extends BaseMvvActivityRouter<ActivityUserCw14Binding, UserViewModelCW14, UserRouter> {
 
     @Override
     public int provideLayoutId() {

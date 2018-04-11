@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:res-xmlns="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/actionSearch"
+        android:icon="@drawable/ic_smoke_free_black_24dp"
+        android:orderInCategory="100"
+        android:title="@string/button1"
+        res-xmlns:showAsAction="always"
+        />
+</menu>

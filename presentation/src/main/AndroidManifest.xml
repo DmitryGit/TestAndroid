@@ -85,7 +85,8 @@
         <!--</activity>-->
 
         <!--<activity android:name="com.nca.presentation.screen.hw11.UserActivityRecyclerView">-->
-        <activity android:name="com.nca.presentation.screen.user.UserActivityCW14">
+        <activity android:name="com.nca.presentation.screen.user.UserActivityCW19">
+        <!--<activity android:name="com.nca.presentation.screen.user.UserActivityCW14">-->
         <!--<activity android:name="com.nca.presentation.screen.user.UserActivity">-->
             <!--android:screenOrientation="portrait">-->
             <!--android:noHistory="true">-->
