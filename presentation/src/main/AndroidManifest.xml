@@ -120,5 +120,9 @@
         <!--<service android:name=".classwork5.MyIntentService"/>-->
         <!--<service android:name=".hw5.WiFiService"/>-->
 
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="6a6f15c411e52f724ce95d4299ebafc229089898" />
+
     </application>
 </manifest>

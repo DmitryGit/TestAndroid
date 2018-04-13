@@ -8,7 +8,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.crashlytics.android.Crashlytics;
 import com.nca.testandroid.R;
+
+import io.fabric.sdk.android.Fabric;
 
 //public class UserActivityCW19 extends BaseMvvActivity<ActivityUserCw19Binding, UserViewModelCW14, UserRouter> {
 public class UserActivityCW19 extends AppCompatActivity {
@@ -21,6 +24,10 @@ public class UserActivityCW19 extends AppCompatActivity {
 //        binding.recyclerView.setHasFixedSize(true);
 //        binding.recyclerView.setAdapter(viewModel.userAdapter);
 
+// если нужно занинуть в крешлитикс эксепшен
+//        Crashlytics.logException(e);
+
+        Fabric.with(this, new Crashlytics());
 //        Toolbar toolbar = binding.toolBar;
         Toolbar toolbar = findViewById(R.id.toolBar);
         setSupportActionBar(toolbar);
@@ -51,6 +58,12 @@ public class UserActivityCW19 extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+//        int a = 5/0;
     }
 }
 
