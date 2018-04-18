@@ -1,5 +1,6 @@
 package com.nca.presentation.screen.user;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +10,11 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.crashlytics.android.Crashlytics;
+import com.nca.notification.NewMessageNotification;
+import com.nca.presentation.utils.ImageChooser;
 import com.nca.testandroid.R;
+
+import java.io.File;
 
 import io.fabric.sdk.android.Fabric;
 
@@ -38,9 +43,18 @@ public class UserActivityCW19 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                ImageChooser.startCamera(UserActivityCW19.this);
+
             }
         });
+        NewMessageNotification.notify(this, "sdddddddddddd", 5 );
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        File file = ImageChooser.getImageFromResult(this, requestCode, resultCode, data)
     }
 
     @Override

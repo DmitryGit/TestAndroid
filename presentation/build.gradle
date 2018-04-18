@@ -92,6 +92,7 @@ dependencies {
 
     implementation dependency.rx2android
 
+//    implementation 'com.android.support:support-v4:27.1.1'
     annotationProcessor dependency.androidBuildingCompiler
 
     implementation dependency.archComponentsExtension
@@ -103,6 +104,11 @@ dependencies {
     compile('com.crashlytics.sdk.android:crashlytics:2.9.1@aar') {
         transitive = true;
     }
+
+    // pushwoosh сайт для создания push-notification
+    // для пуш нотификейшн
+//    compile "com.google.android.gms:play-services-gcm:15.0.0"
+//    compile "com.google.firebase:firebase-messaging:15.0.0"
 
     api project(path: ':data')
 

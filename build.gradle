@@ -81,15 +81,16 @@ allprojects {
     }
 }
 
-//task qaToFabric(dependsOn: assembleDevDebugRelease) {
-//    def groupName = "qa-testapp"
-//    def releaseNotes = ""
-//
-//    def task = tasks.getByName("crashlyticsUploadDistributionDevDebugRelease")
-//    task.ext.betadDistributionReleaseNotes = releaseNotes
-//    task.ext.betadDistributionGroupAliases = groupName
-//    task.execute
-//}
+task qaToFabric() << {
+    dependsOn 'assembleDevDebugRelease'
+    def groupName = "qa-testapp"
+    def releaseNotes = ""
+
+    def task = tasks.getByName("crashlyticsUploadDistributionDevDebugRelease")
+    task.ext.betadDistributionReleaseNotes = releaseNotes
+    task.ext.betadDistributionGroupAliases = groupName
+    task.execute
+}
 
 task clean(type: Delete) {
     delete rootProject.buildDir

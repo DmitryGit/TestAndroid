@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.nca.testandroid">
 
@@ -5,6 +6,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:name="com.nca.app.App"
@@ -15,114 +18,116 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!--<activity android:name=".hw1.Homework1Activity"/>-->
-        <!--<activity android:name=".hw2.Homework2Activity"/>-->
+        <!-- <activity android:name=".hw1.Homework1Activity"/> -->
+        <!-- <activity android:name=".hw2.Homework2Activity"/> -->
 
         <activity
             android:name=".hw1.Homework1Activity"
-            android:parentActivityName=".hw2.HomeworkMain">
-        </activity>
-
+            android:parentActivityName=".hw2.HomeworkMain"></activity>
         <activity
             android:name=".hw2.Homework2Activity"
-            android:parentActivityName=".hw2.HomeworkMain">
-        </activity>
-
+            android:parentActivityName=".hw2.HomeworkMain"></activity>
         <activity
             android:name=".hw3.Homework3Activity"
-            android:parentActivityName=".hw2.HomeworkMain">
-        </activity>
-
+            android:parentActivityName=".hw2.HomeworkMain"></activity>
         <activity
             android:name=".hw4.Homework4Activity"
-            android:parentActivityName=".hw2.HomeworkMain">
-        </activity>
-
+            android:parentActivityName=".hw2.HomeworkMain"></activity>
         <activity
             android:name=".hw5.Homework5Activity"
-            android:parentActivityName=".hw2.HomeworkMain">
-        </activity>
-
+            android:parentActivityName=".hw2.HomeworkMain"></activity>
         <activity
             android:name=".hw6.Homework6Activity"
-            android:parentActivityName=".hw2.HomeworkMain">
-        </activity>
-
+            android:parentActivityName=".hw2.HomeworkMain"></activity>
         <activity
             android:name=".hw7.Homework7Activity"
-            android:parentActivityName=".hw2.HomeworkMain">
-        </activity>
-
+            android:parentActivityName=".hw2.HomeworkMain"></activity>
         <activity
             android:name=".hw8.Homework8Activity"
-            android:parentActivityName=".hw2.HomeworkMain">
-        </activity>
-
+            android:parentActivityName=".hw2.HomeworkMain"></activity>
         <activity
             android:name=".hw9.Homework9Activity"
-            android:parentActivityName=".hw2.HomeworkMain">
-        </activity>
+            android:parentActivityName=".hw2.HomeworkMain"></activity>
 
-        <!--<activity-->
-            <!--android:name="com.nca.presentation.screen.hw11.UserActivityRecyclerView"-->
-            <!--android:parentActivityName=".hw2.HomeworkMain">-->
-        <!--</activity>-->
+        <!-- <activity -->
+        <!-- android:name="com.nca.presentation.screen.hw11.UserActivityRecyclerView" -->
+        <!-- android:parentActivityName=".hw2.HomeworkMain"> -->
+        <!-- </activity> -->
 
-        <!--<activity-->
-            <!--android:name=".hw6.Homework6Activity"-->
-            <!--android:parentActivityName=".hw2.HomeworkMain">-->
-        <!--</activity>-->
 
-        <!--// TextUtils.IsEmpty() - проверка на null-->
-        <!--<activity android:name=".hw2.HomeworkMain">-->
-        <!--<activity android:name=".hw6.Homework6Activity">-->
-            <!--&lt;!&ndash;android:screenOrientation="portrait">&ndash;&gt;-->
-            <!--&lt;!&ndash;android:noHistory="true">&ndash;&gt;-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN"/>-->
-                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
-            <!--</intent-filter>-->
-        <!--</activity>-->
+        <!-- <activity -->
+        <!-- android:name=".hw6.Homework6Activity" -->
+        <!-- android:parentActivityName=".hw2.HomeworkMain"> -->
+        <!-- </activity> -->
 
-        <!--<activity android:name="com.nca.presentation.screen.hw11.UserActivityRecyclerView">-->
+
+        <!-- // TextUtils.IsEmpty() - проверка на null -->
+        <!-- <activity android:name=".hw2.HomeworkMain"> -->
+        <!-- <activity android:name=".hw6.Homework6Activity"> -->
+        <!-- &lt;!&ndash;android:screenOrientation="portrait">&ndash;&gt; -->
+        <!-- &lt;!&ndash;android:noHistory="true">&ndash;&gt; -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN"/> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+
+
+        <!-- <activity android:name="com.nca.presentation.screen.hw11.UserActivityRecyclerView"> -->
         <activity android:name="com.nca.presentation.screen.user.UserActivityCW19">
-        <!--<activity android:name="com.nca.presentation.screen.user.UserActivityCW14">-->
-        <!--<activity android:name="com.nca.presentation.screen.user.UserActivity">-->
-            <!--android:screenOrientation="portrait">-->
-            <!--android:noHistory="true">-->
+
+            <!-- <activity android:name="com.nca.presentation.screen.user.UserActivityCW14"> -->
+            <!-- <activity android:name="com.nca.presentation.screen.user.UserActivity"> -->
+            <!-- android:screenOrientation="portrait"> -->
+            <!-- android:noHistory="true"> -->
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <!--RXBinding-->
-        <!--mackUp services-->
-
-        <!--<activity android:name=".hw9.Homework9Activity">-->
-        <!--<activity android:name=".hw2.HomeworkMain">-->
-            <!--&lt;!&ndash;android:screenOrientation="portrait">&ndash;&gt;-->
-            <!--&lt;!&ndash;android:noHistory="true">&ndash;&gt;-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN"/>-->
-                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
-            <!--</intent-filter>-->
-        <!--</activity>-->
+        <!-- RXBinding -->
+        <!-- mackUp services -->
 
 
-        <!--<receiver android:name=".classwork5.MyReceiver">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.AIRPLANE_MODE"/>-->
-            <!--</intent-filter>-->
-        <!--</receiver>-->
+        <!-- <activity android:name=".hw9.Homework9Activity"> -->
+        <!-- <activity android:name=".hw2.HomeworkMain"> -->
+        <!-- &lt;!&ndash;android:screenOrientation="portrait">&ndash;&gt; -->
+        <!-- &lt;!&ndash;android:noHistory="true">&ndash;&gt; -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN"/> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
 
-        <!--<service android:name=".classwork5.MyService"/>-->
-        <!--<service android:name=".classwork5.MyIntentService"/>-->
-        <!--<service android:name=".hw5.WiFiService"/>-->
+
+        <!-- <receiver android:name=".classwork5.MyReceiver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.AIRPLANE_MODE"/> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+
+        <!-- <service android:name=".classwork5.MyService"/> -->
+        <!-- <service android:name=".classwork5.MyIntentService"/> -->
+        <!-- <service android:name=".hw5.WiFiService"/> -->
 
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="6a6f15c411e52f724ce95d4299ebafc229089898" />
 
+    <provider
+        android:authorities="com.nca.presentation.utils.MyFileProvider"
+        android:name="com.nca.presentation.utils.MyFileProvider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_paths"/>
+    </provider>
+
     </application>
+
 </manifest>
