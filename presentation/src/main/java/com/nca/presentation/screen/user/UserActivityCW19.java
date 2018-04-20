@@ -1,10 +1,12 @@
 package com.nca.presentation.screen.user;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,6 +19,8 @@ import com.nca.testandroid.R;
 import java.io.File;
 
 import io.fabric.sdk.android.Fabric;
+
+//adb shell monkey -p com.nca.testandroid -v 5000
 
 //public class UserActivityCW19 extends BaseMvvActivity<ActivityUserCw19Binding, UserViewModelCW14, UserRouter> {
 public class UserActivityCW19 extends AppCompatActivity {
@@ -44,6 +48,7 @@ public class UserActivityCW19 extends AppCompatActivity {
             public void onClick(View v) {
 
                 ImageChooser.startCamera(UserActivityCW19.this);
+//                ImageChooser.startGalery(UserActivityCW19.this);
 
             }
         });
@@ -54,7 +59,14 @@ public class UserActivityCW19 extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-        File file = ImageChooser.getImageFromResult(this, requestCode, resultCode, data)
+        if(resultCode == Activity.RESULT_OK) {
+            File file = ImageChooser.getImageFromResult(this, requestCode, resultCode, data);
+            if(file != null) {
+                Log.e("AA", "file = " + file.getAbsolutePath());
+            } else {
+                    Log.e("AA", "file is null");
+                }
+            }
     }
 
     @Override

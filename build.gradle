@@ -34,6 +34,7 @@ ext {
     okHttpVersion = "3.10.0"
     archComponentVersion = '1.0.0'
     constraintLayoutVersion = "1.0.2"
+    rxPermissionsVersion = "0.9.5@aar"
 
 
 
@@ -68,7 +69,11 @@ ext {
         okHttp: "com.squareup.okhttp3:okhttp:$okHttpVersion",
         okHttpLogging: "com.squareup.okhttp3:logging-interceptor:$okHttpVersion",
 
+        rxPermissions: "com.tbruyelle.rxpermissions2:rxpermissions:$rxPermissionsVersion",
+
         gson: "com.google.code.gson:gson:$gsonVersion"
+
+
 
     ]
 }
@@ -82,11 +87,13 @@ allprojects {
 }
 
 task qaToFabric() << {
-    dependsOn 'assembleDevDebugRelease'
+//    dependsOn 'assembleDevDebugRelease'
+    dependsOn 'assembleDevRelease'
     def groupName = "qa-testapp"
     def releaseNotes = ""
 
-    def task = tasks.getByName("crashlyticsUploadDistributionDevDebugRelease")
+    def task = tasks.getByName("crashlyticsUploadDistributionDevRelease")
+//    def task = tasks.getByName("crashlyticsUploadDistributionDevDebugRelease")
     task.ext.betadDistributionReleaseNotes = releaseNotes
     task.ext.betadDistributionGroupAliases = groupName
     task.execute
